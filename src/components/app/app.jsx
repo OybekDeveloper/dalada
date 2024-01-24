@@ -8,6 +8,7 @@ import istaklar3 from "../image/istaklar3.png"
 import './app.scss'
 import Features from '../features/features'
 import About from '../about/about'
+import Comments from '../comments/comments'
 const App = () => {
   return (
     <div className='app px-[96px] container'>
@@ -27,6 +28,7 @@ const App = () => {
         </div>
         <Features/>
         <About/>
+        <Comments/>
     </div>
   )
 }
