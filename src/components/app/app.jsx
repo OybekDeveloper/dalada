@@ -9,6 +9,9 @@ import './app.scss'
 import Features from '../features/features'
 import About from '../about/about'
 import Comments from '../comments/comments'
+import Blog from '../blog/blog'
+import Faq from '../faq/faq'
+import Footer from '../footer/footer'
 const App = () => {
   return (
     <div className='app px-[96px] container'>
@@ -29,6 +32,9 @@ const App = () => {
         <Features/>
         <About/>
         <Comments/>
+        <Blog/>
+        <Faq/>
+        <Footer/>
     </div>
   )
 }

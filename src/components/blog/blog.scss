@@ -1,0 +1,39 @@
+.blog {
+  .blogimg {
+    width: 320px;
+    height: 213px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--White, #fff);
+    box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.02);
+  }
+  .background {
+    height: 683px;
+    flex-shrink: 0;
+    opacity: 0.2;
+    background: var(--Gray, #dfdfe2);
+  }
+  .btn {
+    position: relative; /* Qo'shilgan qismatining o'ziga ega bo'lishi uchun */
+    transition: transform 0.3s ease;
+  
+    img {
+      transition: transform 0.3s ease;
+    }
+  
+    &:hover {
+      img {
+        transform: translateX(10px);
+      }
+    }
+  
+    &:active {
+      img {
+        transform: translateX(0); /* Tugaganidan so'ng orqaga qaytish */
+      }
+    }
+  }
+  
+  
+  
+}

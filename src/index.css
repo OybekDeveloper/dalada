@@ -9,5 +9,9 @@
 }
 body{
   position: relative;
-  font-family: "Pretendard";
-}
+  font-family: "sans-serif";
+  }
+  h1 p{
+    line-height: 140%!important;
+
+  }
