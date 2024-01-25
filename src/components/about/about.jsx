@@ -58,15 +58,15 @@ const About = () => {
                     <h1 className='text-[32px] font-bold text-center text-[#040303] '>Ilovani tezda yuklab oling </h1>
                     <p className='text-[16px] opacity-[0.7] font-[400] text-center text-[#040303]'>Sed ut perspiciatis unde omnis iste natus error sit voluptatem <br /> accusantium doloremque laudantium, to</p>
                     <div className='flex flex-row justify-between gap-10 py-[50px] '>
-                        <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px]'>
+                        <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2'>
                             <img src={appstore} alt="app" />
                             <h1 className='text-[#fff] text-[20px] font-[500] text-center'>AppStore</h1>
                         </div>
-                        <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px]'>
+                        <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2'>
                             <img src={playmarket} alt="app" />
                             <h1 className='text-[#fff] text-[20px] font-[500] text-center'>PlayMarket</h1>
                         </div>
-                        <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px]'>
+                        <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2'>
                             <img src={appgalery} alt="app" />
                             <h1 className='text-[#fff] text-[20px] font-[500] text-center'>AppGallery</h1>
                         </div>

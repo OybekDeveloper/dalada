@@ -41,15 +41,15 @@ const Footer = () => {
           <div className="flex flex-col justify-center ">
             <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>
             <div className='flex flex-row justify-between gap-10 py-[10px] '>
-              <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px]'>
+              <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2'>
                 <img src={appstore} alt="app" />
                 <h1 className='text-[#fff] text-[20px] font-[500] text-center'>AppStore</h1>
               </div>
-              <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px]'>
+              <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2'>
                 <img src={playmarket} alt="app" />
                 <h1 className='text-[#fff] text-[20px] font-[500] text-center'>PlayMarket</h1>
               </div>
-              <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px]'>
+              <div className='flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2'>
                 <img src={appgalery} alt="app" />
                 <h1 className='text-[#fff] text-[20px] font-[500] text-center'>AppGallery</h1>
               </div>
