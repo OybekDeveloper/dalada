@@ -6,8 +6,8 @@ import arrow from "./arrow.svg";
 import "./blog.scss";
 const Blog = () => {
     return (
-        <div className="blog relative w-full h-[683px]">
-            <div className="background w-full absolute flex justify-center items-center z-[-1] "></div>
+        <div className="blog relative w-full h-full lg:pb-[100px]">
+            <div className="background w-full h-full absolute flex justify-center items-center z-[-1] "></div>
             <div className="blog flex flex-col justify-center items-center z-[10]  pt-[64px] ">
                 <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
                     Blog
@@ -17,10 +17,10 @@ const Blog = () => {
                     <br />
                     foydali maslahatlar
                 </h1>
-                <div className="flex flexrow justify-center gap-[48px] pt-[64px]">
-                    <div className="flex flex-col justify-center items-center relative">
+                <div className="xl:flex lg:grid  grid-cols-2  flexrow justify-center gap-[48px] pt-[64px]">
+                    <div className="flex flex-col mb-[100px] w-full  justify-center items-center relative">
                         <img width={"384px"} src={img3} alt="" />
-                        <div className="w-[320px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">
+                        <div className="w-[320px]  blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">
                             <h1 className="text-[#040303] text-[18px] font-[500]">
                                 Olma, nok va olcha ko’chatlari parvarishi haqida
                             </h1>
@@ -39,9 +39,9 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center relative">
+                    <div className="flex flex-col mb-[100px] w-full  justify-center items-center relative">
                         <img width={"384px"} src={img1} alt="" />
-                        <div className="w-[320px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">
+                        <div className="w-[320px]  blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">
                             <h1 className="text-[#040303] text-[18px] font-[500]">
                                 Kartoshkadagi turli kasalliklarning
                                 oldini olish usullari
@@ -60,9 +60,9 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center relative">
+                    <div className="flex flex-col mb-[100px] w-full  justify-center items-center relative">
                         <img width={"384px"} src={img2} alt="" />
-                        <div className="w-[320px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">
+                        <div className="w-[320px]  blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">
                             <h1 className="text-[#040303] text-[18px] font-[500]">
                                 Uzum yetishtirishda ko’pchilik
                                 qiladigan xatolar

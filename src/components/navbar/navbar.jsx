@@ -13,7 +13,7 @@ const Navbar = () => {
           <img src={logo2} alt="logo" />
         </div>
       </div>
-      <div className="links">
+      <div className="links max-lg:hidden">
         <ul className='flex flex-row justify-between items-center gap-[40px]'>
           <li>Ilova xususiyatlari</li>
           <li>Blog</li>

@@ -22,7 +22,7 @@ const Faq = () => {
       <h1 className="text-[32px] font-bold text-[#040303] pt-[18px]">
         Ko’p beriladigan savollar
       </h1>
-      <div className="w-[822px] ">
+      <div className="w-3/4  ">
         {data.map((item) => (
           <FaqItem key={item.id}/>   
         ))}

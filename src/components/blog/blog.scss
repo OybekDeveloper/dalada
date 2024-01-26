@@ -1,6 +1,5 @@
 .blog {
   .blogimg {
-    width: 320px;
     height: 213px;
     flex-shrink: 0;
     border-radius: 6px;
@@ -8,7 +7,6 @@
     box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.02);
   }
   .background {
-    height: 683px;
     flex-shrink: 0;
     opacity: 0.2;
     background: var(--Gray, #dfdfe2);

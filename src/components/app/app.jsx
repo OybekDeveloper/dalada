@@ -14,9 +14,9 @@ import Faq from '../faq/faq'
 import Footer from '../footer/footer'
 const App = () => {
   return (
-    <div className='app px-[96px] container'>
+    <div className='app xl:w-10/12 md:w-11/12'>
         <Navbar/>
-        <div className="home   flex flex-col items-center mt-[96px] h-[768px] rounded-[24px] text-[#fff] overflow-hidden mb-[30px]">
+        <div className="home mx-auto w-full flex flex-col items-center mt-[96px] lg:h-[768px] md:h-[673px] rounded-[24px] text-[#fff] overflow-hidden mb-[30px]">
             <h1 className='text-4xl font-[600] pt-[88px] text-center '>The opportunity to change lives using <br/>blockchain technology</h1>
             <p className='text-base font-[500] pt-[12px] text-center'>Security and QoS issues in blockchain enabled next-generation smart logistic <br/> networks: A tutorial</p>
             <div className='flex flex-row justify-center items-center gap-[12px]'>
@@ -24,9 +24,9 @@ const App = () => {
                 <img width={150}  src={googleplay} alt="applogo" />
             </div>
             <div className='h-full w-full imgs flex items-start justify-center gap-[32px]'>
-                <img className=' mt-[200px]' src={istaklar1} alt="appfoto" />
-                <img className=" mt-[0]" src={istaklar2} alt="appfoto" />
-                <img className=" mt-[100px]" src={istaklar3} alt="appfoto" />
+                <img className='xl:w-[320px] lg:w-[270px] md:w-[230px] mt-[200px]' src={istaklar1} alt="appfoto" />
+                <img className="xl:w-[320px] lg:w-[270px] md:w-[230px] mt-[0]" src={istaklar2} alt="appfoto" />
+                <img className="xl:w-[320px] lg:w-[270px] md:w-[230px] mt-[100px]" src={istaklar3} alt="appfoto" />
             </div>
         </div>
         <Features/>

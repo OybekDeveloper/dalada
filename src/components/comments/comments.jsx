@@ -120,7 +120,7 @@ const Comments = () => {
       </h1>
 
       <div
-        className={`relative grid grid-cols-3 gap-10 pt-[64px] ${!active ? "overflow-hidden h-[828px] " : " "
+        className={`relative grid lg:grid-cols-3 md:grid-cols-2 gap-10 pt-[64px] ${!active ? "overflow-hidden h-[828px] " : " "
           } mb-[20px]`}
       >
         {data?.map((item) => (
