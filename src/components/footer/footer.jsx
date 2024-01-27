@@ -13,9 +13,9 @@ import line from "./img/line.svg";
 import "./footer.scss";
 const Footer = () => {
   return (
-    <div className="w-full flex flex-col  footer absolute left-0 px-[96px] mt-[180px] ">
-      <div className="aloqa  xl:flex lg:grid grid-cols-2 flex-row  items-center justify-around gap-20 py-[50px]">
-        <div className="flex flex-col justify-between items-start gap-[21px]">
+    <div className="w-full flex flex-col  footer absolute left-0 px-[96px] max-sm:px-[10px] mt-[180px] ">
+      <div className="aloqa  xl:flex lg:grid max-lg:grid  grid-cols-2 flex-row max-sm:flex max-sm:flex-col items-center justify-around gap-20 py-[50px]">
+        <div className="flex flex-col justify-between items-start gap-[21px] max-sm:w-full">
           <div className="logo flex flex-row justify-center items-center">
             <img src={logo3} alt="logo" />
             <div className="flex flex-col items-start">
@@ -31,17 +31,17 @@ const Footer = () => {
           </div>
           <div className=""></div>
         </div>
-        <div className="links">
-          <ul className="flex flex-col justify-start items-start gap-3 text-[#040303] text-[18px] font-[400]">
+        <div className="links max-sm:w-full">
+          <ul className="max-sm:w-full flex flex-col justify-start items-start gap-3 text-[#040303] text-[18px] font-[400]">
             <li>Ilova xususiyatlari</li>
             <li>Blog</li>
             <li>Mijozlar fikrlari</li>
             <li>Ko’p beriladigan savollar</li>
           </ul>
         </div>
-        <div className="flex flex-col justify-center ">
+        <div className="flex flex-col justify-center max-sm:w-full">
           <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>
-          <div className="flex flex-row justify-between gap-10 py-[10px] ">
+          <div className="flex flex-row max-sm:flex-col justify-between gap-10 py-[10px] w-1/2">
             <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
               <img src={appstore} alt="app" />
               <h1 className="text-[#fff] text-[20px] font-[500] text-center">
@@ -65,8 +65,8 @@ const Footer = () => {
         <div></div>
       </div>
       <img src={line} alt="" />
-      <div className="flex flex-row justify-between">
-        <div className="social-network flex flexrow justify-center items-center gap-[12px]">
+      <div className="flex flex-row justify-between max-sm:flex-col max-sm:items-center">
+        <div className="social-network flex flex-row justify-center items-center gap-[12px]">
           <a className="p-4 w-[56px] h-[56px]" href="/">
             <img src={facebook} alt="" />
           </a>

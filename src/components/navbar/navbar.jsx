@@ -5,7 +5,7 @@ import logo3 from '../image/Union.svg'
 import './navbar.scss'
 const Navbar = () => {
   return (
-    <div className='navbar top-0 left-0 fixed w-full flex flex-row items-center h-[83px] justify-between px-[96px] z-[999]'>
+    <div className='navbar top-0 left-0 fixed w-full flex flex-row items-center h-[83px] justify-between px-[96px] max-sm:px-[10px] z-[999]'>
       <div className="logo flex flex-row justify-center items-center">
         <img src={logo3} alt="logo" />
         <div className='flex flex-col items-start'>
