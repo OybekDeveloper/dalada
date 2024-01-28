@@ -6,7 +6,7 @@ import arrow from "./arrow.svg";
 import "./blog.scss";
 const Blog = () => {
     return (
-        <div className="blog relative w-full h-full lg:pb-[100px]">
+        <div id="blog" className="blog relative w-full h-full lg:pb-[100px] pt-[30px]">
             <div className="background w-full h-full absolute flex justify-center items-center z-[-1] "></div>
             <div className="blog flex flex-col justify-center items-center z-[10]  pt-[64px] ">
                 <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">

@@ -1,3 +1,31 @@
-.footer{
-    background: rgba(223, 223, 226, 0.20);
+.footer {
+    .social-item{
+        &:hover{
+            color: #29cc88!important;
+        }
+    }
+  background: rgba(223, 223, 226, 0.2);
+  .install {
+    div {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .links {
+    ul {
+      li {
+        color: var(--Black, #040303);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: #25b679;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
 }

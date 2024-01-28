@@ -110,7 +110,7 @@ const data = [
 const Comments = () => {
   const [active, setActice] = useState(false);
   return (
-    <div className="comments flex flex-col items-center pt-[100px] max-sm:w-full">
+    <div id="comments" className="comments flex flex-col items-center pt-[100px] max-sm:w-full">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Mijozlar fikrlari
       </div>

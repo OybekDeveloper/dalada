@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center max-sm:w-full">
           <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>
-          <div className="flex flex-row max-sm:flex-col justify-between gap-10 py-[10px] w-1/2">
+          <div className="install   flex flex-row max-sm:flex-col justify-between gap-10 py-[10px] w-1/2">
             <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
               <img src={appstore} alt="app" />
               <h1 className="text-[#fff] text-[20px] font-[500] text-center">
@@ -64,20 +64,20 @@ const Footer = () => {
         </div>
         <div></div>
       </div>
-      <img src={line} alt="" />
+      <img src={line} alt="img" />
       <div className="flex flex-row justify-between max-sm:flex-col max-sm:items-center">
         <div className="social-network flex flex-row justify-center items-center gap-[12px]">
           <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img src={facebook} alt="" />
+            <img className="social-item" src={facebook} alt="img" />
           </a>
           <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img src={instagram} alt="" />
+            <img className="social-item" src={instagram} alt="img" />
           </a>
           <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img src={telegram} className="" alt="" />
+            <img className="social-item" src={telegram}  alt="img" />
           </a>
           <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img src={twitter} alt="" />
+            <img className="social-item" src={twitter} alt="img" />
           </a>
         </div>
         <ul className="flex flex-row justify-center items-center gap-[26px] text-[18px] font-[400] opacity-[0.6]">

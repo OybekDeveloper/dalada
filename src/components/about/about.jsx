@@ -11,7 +11,7 @@ import qr from "./img/ar.svg";
 import "./about.scss";
 const About = () => {
   return (
-    <div className="about flex flex-col items-center overflow-hidden w-full">
+    <div id="about" className="about flex flex-col items-center overflow-hidden w-full">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Ilova haqida
       </div>
@@ -103,7 +103,7 @@ const About = () => {
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem{" "}
              accusantium doloremque laudantium, to
           </p>
-          <div className="flex flex-row max-sm:flex-col justify-between gap-10 py-[50px] ">
+          <div className="install flex flex-row max-sm:flex-col justify-between gap-10 py-[50px] ">
             <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
               <img src={appstore} alt="app" />
               <h1 className="text-[#fff] text-[20px] font-[500] text-center">
@@ -132,7 +132,7 @@ const About = () => {
             <img src={qr} alt="" />
           </div>
         </div>
-        <div className="opc absolute w-full"></div>
+        <div className="opc absolute w-full z-[-1]"></div>
       </div>
     </div>
   );
