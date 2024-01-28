@@ -74,6 +74,9 @@ const Navbar = () => {
             <a href="#features">
               <li onClick={() => setIsOpen(false)}>Ilova xususiyatlari</li>
             </a>
+            <a href="#about">
+              <li onClick={() => setIsOpen(false)}>Haqida</li>
+            </a>
             <a href="#comments">
               <li onClick={() => setIsOpen(false)}>Mijozlar fikrlari</li>
             </a>

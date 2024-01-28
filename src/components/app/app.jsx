@@ -12,7 +12,6 @@ import Blog from "../blog/blog";
 import Faq from "../faq/faq";
 import Footer from "../footer/footer";
 import "./app.scss";
-import { Blurhash } from "react-blurhash";
 const App = () => {
   return (
     <div id="home" className="app xl:w-10/12 md:w-11/12">
