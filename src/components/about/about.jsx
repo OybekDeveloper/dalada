@@ -11,7 +11,7 @@ import qr from "./img/ar.svg";
 import "./about.scss";
 const About = () => {
   return (
-    <div id="about" className="about flex flex-col items-center overflow-hidden w-full">
+    <div id="about" className="about flex flex-col items-center  w-full mb-10">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Ilova haqida
       </div>
@@ -94,7 +94,7 @@ const About = () => {
         </div>
       </div>
       {/* ilovani yuklash havolasi */}
-      <div className="relative h-[800px] w-full  pt-[100px] max-sm:pt-[20px]">
+      <div className="relative max-sm:h-[900px] h-[700px]  w-full  pt-[100px] max-sm:pt-[20px]">
         <div className="absolute instal w-full flex flex-col items-center gap-4 mt-[100px]">
           <h1 className="text-[32px] font-bold text-center text-[#040303] ">
             Ilovani tezda yuklab oling{" "}
@@ -132,7 +132,7 @@ const About = () => {
             <img src={qr} alt="" />
           </div>
         </div>
-        <div className="opc absolute w-full z-[-1]"></div>
+        <div className="opc absolute h-full w-full z-[-1]"></div>
       </div>
     </div>
   );
