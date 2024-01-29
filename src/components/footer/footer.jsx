@@ -2,9 +2,9 @@ import React from "react";
 import logo1 from "../image/Subtract (1).svg";
 import logo2 from "../image/Subtract (2).svg";
 import logo3 from "../image/Union.svg";
-import appstore from "./img/appstor.svg";
-import playmarket from "./img/playmarket.svg";
-import appgalery from "./img/appgalery.svg";
+import appstore from "../image/AppStore1.svg";
+import playmarket from "../image/PlayMarket.svg";
+import appgalery from "../image/AppGallery.svg";
 import instagram from "./img/instagram.svg";
 import telegram from "./img/telegram.svg";
 import facebook from "./img/facebook.svg";
@@ -41,25 +41,10 @@ const Footer = () => {
         </div>
         <div className="flex flex-col justify-center max-sm:w-full">
           <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>
-          <div className="install   flex flex-row max-sm:flex-col justify-between gap-10 py-[10px] w-1/2">
-            <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
-              <img src={appstore} alt="app" />
-              <h1 className="text-[#fff] text-[20px] font-[500] text-center">
-                AppStore
-              </h1>
-            </div>
-            <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
-              <img src={playmarket} alt="app" />
-              <h1 className="text-[#fff] text-[20px] font-[500] text-center">
-                PlayMarket
-              </h1>
-            </div>
-            <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
-              <img src={appgalery} alt="app" />
-              <h1 className="text-[#fff] text-[20px] font-[500] text-center">
-                AppGallery
-              </h1>
-            </div>
+          <div className="flex  py-4 flex-col  md:flex-row gap-[32px] *: ">
+            <img className="w-[180px]" src={appstore} alt="logo" />
+            <img className="w-[180px]"src={playmarket} alt="logo" />
+            <img className="w-[180px]" src={appgalery} alt="logo" />
           </div>
         </div>
         <div></div>

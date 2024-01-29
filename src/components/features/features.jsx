@@ -18,7 +18,7 @@ const Features = () => {
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Xususiyatlar
       </div>
-      <h1 className="text-3xl text-center pt-[12px]">
+      <h1 className="text-3xl text-center pt-[12px] font-bold">
         Ilovamiz xususiyatlari sizga
         <br />
         albatta yoqadi{" "}

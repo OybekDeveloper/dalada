@@ -4,9 +4,9 @@ import img2 from "../image/istaklar1.png";
 import img3 from "../image/istaklar2.png";
 import way1 from "./img/way1.svg";
 import way2 from "./img/way2.svg";
-import appstore from "./img/appstor.svg";
-import playmarket from "./img/playmarket.svg";
-import appgalery from "./img/appgalery.svg";
+import appstore from "../image/AppStore1.svg";
+import playmarket from "../image/PlayMarket.svg";
+import appgalery from "../image/AppGallery.svg";
 import qr from "./img/ar.svg";
 import "./about.scss";
 const About = () => {
@@ -103,25 +103,10 @@ const About = () => {
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem{" "}
              accusantium doloremque laudantium, to
           </p>
-          <div className="install flex flex-row max-sm:flex-col justify-between gap-10 py-[50px] ">
-            <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
-              <img src={appstore} alt="app" />
-              <h1 className="text-[#fff] text-[20px] font-[500] text-center">
-                AppStore
-              </h1>
-            </div>
-            <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
-              <img src={playmarket} alt="app" />
-              <h1 className="text-[#fff] text-[20px] font-[500] text-center">
-                PlayMarket
-              </h1>
-            </div>
-            <div className="flex flex-row hover:bg-[#29cc88] justify-center items-center bg-[#25B679] rounded-[7px] pl-[20px] pr-[24px] py-[10px] gap-2">
-              <img src={appgalery} alt="app" />
-              <h1 className="text-[#fff] text-[20px] font-[500] text-center">
-                AppGallery
-              </h1>
-            </div>
+          <div className="flex justify-center items-center py-4 flex-col  md:flex-row gap-[32px] *: ">
+            <img className="w-[180px] max-sm:w-[220px]" src={appstore} alt="logo" />
+            <img className="w-[180px] max-sm:w-[220px]"src={playmarket} alt="logo" />
+            <img className="w-[180px] max-sm:w-[220px]" src={appgalery} alt="logo" />
           </div>
           <h1 className="text-[#040303] text-[23px] font-bold text-center">
             QR-kodni skanerlang va qulay

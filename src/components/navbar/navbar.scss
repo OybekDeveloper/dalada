@@ -2,14 +2,42 @@
   background: rgba(255, 255, 255, 0.24);
   box-shadow: 0px 0.5px 0px 0px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(12px);
+  .leng {
+    cursor: pointer;
+    border-radius: 26px;
+    border: 1px solid var(--Gray, #dfdfe2);
+  }
+  .leng-item {
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid var(--Gray, #dfdfe2);
+    background: var(--White, #fff);
+    color: var(--Black, #000);
+    p {
+    padding: 5px 10px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+      &:hover {
+        padding: 5px 10px;
+        border-radius: 8px;
+        background: var(--Gray, #f2f2f3);
+      }
+    }
+  }
   .link-ul {
     width: 221px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid var(--Gray, #dfdfe2);
     background: var(--White, #fff);
-    li{
+    li {
       padding: 4px;
+        transition: all 0.2s ease-in-out;
+      &:hover{
+        background: var(--Gray, #f2f2f3);
+        border-radius: 8px;
+      }
     }
   }
   .links {
