@@ -61,17 +61,17 @@ const Footer = () => {
       <img src={line} alt="img" />
       <div className="flex flex-row justify-between max-sm:flex-col max-sm:items-center">
         <div className="social-network flex flex-row justify-center items-center gap-[12px]">
-          <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img className="social-item" src={facebook} alt="img" />
+          <a className="p-4 " href="/">
+            <img className="h-[30px] w-[30px] social-item" src={facebook} alt="img" />
           </a>
-          <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img className="social-item" src={instagram} alt="img" />
+          <a className="p-4 " href="/">
+            <img className="h-[30px] w-[30px] social-item" src={instagram} alt="img" />
           </a>
-          <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img className="social-item" src={telegram}  alt="img" />
+          <a className="p-4 " href="/">
+            <img className="h-[30px] w-[30px] social-item" src={telegram}  alt="img" />
           </a>
-          <a className="p-4 w-[56px] h-[56px]" href="/">
-            <img className="social-item" src={twitter} alt="img" />
+          <a className="p-4 " href="/">
+            <img className="h-[30px] w-[30px] social-item" src={twitter} alt="img" />
           </a>
         </div>
         <ul className="flex flex-row justify-center items-center gap-[26px] text-[18px] font-[400] opacity-[0.6]">
