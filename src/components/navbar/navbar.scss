@@ -6,6 +6,14 @@
     cursor: pointer;
     border-radius: 26px;
     border: 1px solid var(--Gray, #dfdfe2);
+    .leng-active{
+      transition: all 0.5s ease-in-out;
+      transform:rotateX(180deg);
+    }
+    img{
+      transition: all 0.5s ease-in-out;
+      transform:rotateX(0);
+    }
   }
   .leng-item {
     flex-shrink: 0;

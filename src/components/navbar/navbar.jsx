@@ -81,7 +81,7 @@ const Navbar = () => {
           >
             <img width={16} height={16} src={uzb} alt="fsf" />
             <p className="font-[500] text-[16px] w-[50px]">{selectedLanguage}</p>
-            <img className="w-[16px] h-[16px]" src={frame} alt="fsfaf" />
+            <img className={`${isLengOpen && 'leng-active'} img w-[16px] h-[16px]`} src={frame} alt="fsfaf" />
           </div>
           <motion.div
             initial={{ opacity: 0, y: "100%" }}

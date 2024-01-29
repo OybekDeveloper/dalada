@@ -161,7 +161,7 @@ const Comments = () => {
       <button
         onClick={() => setActice(!active)}
         className={`${!active && "hidden"
-          } active   z-[100] btn px-[24px] hover:bg-[#29cc88] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]  `}
+          } active z-[100] btn px-[24px] hover:bg-[#29cc88] py-[12px] bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]  `}
       >
         {"Yopish"}
       </button>
