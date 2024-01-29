@@ -29,9 +29,9 @@ const App = () => {
           <Loader />
         </div>
       ):(
-      <div id="home" className="app xl:w-10/12 md:w-11/12">
+      <div id="home" className="app">
         <Navbar />
-        <div className="home mx-auto w-full flex flex-col items-center mt-[96px] lg:h-[768px] md:h-[673px] sm:h-[570px] max-sm:h-[800px] rounded-[24px] max-sm:rounded-none text-[#fff] overflow-hidden mb-[30px]">
+        <div className="home  xl:w-10/12 md:w-11/12 mx-auto w-full flex flex-col items-center mt-[96px] lg:h-[768px] md:h-[673px] sm:h-[570px] max-sm:h-[800px] rounded-[24px] max-sm:rounded-none text-[#fff] overflow-hidden mb-[30px]">
           <h1 className="text-4xl font-[600] pt-[88px] text-center ">
             The opportunity to change lives using <br />
             blockchain technology

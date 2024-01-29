@@ -14,7 +14,7 @@ import {
 import "./features.scss";
 const Features = () => {
   return (
-    <div id="features" className="features flex items-center flex-col pt-[100px]">
+    <div id="features" className="features xl:w-10/12 md:w-11/12 mx-auto flex items-center flex-col pt-[100px]">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Xususiyatlar
       </div>

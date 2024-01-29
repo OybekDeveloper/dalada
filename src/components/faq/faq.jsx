@@ -13,7 +13,7 @@ const data = [
 const Faq = () => {
  
   return (
-    <div id="faq" className="faq flex flex-col items-center pt-[100px] ">
+    <div id="faq" className="faq xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center pt-[100px] ">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         FAQ
       </div>

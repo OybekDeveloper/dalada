@@ -33,10 +33,19 @@ const Footer = () => {
         </div>
         <div className="links max-sm:w-full">
           <ul className="max-sm:w-full flex flex-col justify-start items-start gap-3 text-[#040303] text-[18px] font-[400]">
-            <li>Ilova xususiyatlari</li>
-            <li>Blog</li>
-            <li>Mijozlar fikrlari</li>
-            <li>Ko’p beriladigan savollar</li>
+          <li>
+            <a href="#features">Ilova xususiyatlari</a>
+          </li>
+
+          <li>
+            <a href="#comments">Mijozlar fikrlari</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#faq">Ko’p beriladigan savollar</a>
+          </li>
           </ul>
         </div>
         <div className="flex flex-col justify-center max-sm:w-full">

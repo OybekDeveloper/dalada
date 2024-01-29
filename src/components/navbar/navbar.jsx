@@ -91,7 +91,7 @@ const Navbar = () => {
             }}
             exit={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="w-full lg:hidden leng-item  p-2 right-0 top-[50px] text-[18px]  absolute flex flex-col justify-start items-start gap-[12px] "
+            className="w-full leng-item  p-2 right-0 top-[50px] text-[18px]  absolute flex flex-col justify-start items-start gap-[12px] "
           >
             {translations?.map(item=>(
               <p key={item.id} onClick={()=>{setSelectedLanguage(item.leng.title);setIsLengOpen(false)}} className="">
