@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./comments.scss";
+import CommentItem from "./comment-item";
 const data = [
   {
     id: 1,
     name: "John Doe",
     work: "Software Engineer",
-    description: "Passionate about creating innovative software solutions.",
+    description:
+      "Passionate about creating innovative software solutions.Passionate about creating innovative software solutions.",
     logo: "path/to/logo1.png",
   },
   {
@@ -19,7 +21,8 @@ const data = [
     id: 3,
     name: "Alex Johnson",
     work: "Data Scientist",
-    description: "Analyzing data to extract valuable insights.",
+    description:
+      "Analyzing data to extract valuable insights.Analyzing data to extract valuable insights",
     logo: "path/to/logo3.png",
   },
   {
@@ -27,7 +30,7 @@ const data = [
     name: "Emily White",
     work: "Marketing Specialist",
     description:
-      "Crafting effective marketing strategies to reach the target audience.",
+      "Crafting effective marketing strategies to reach the target audience.Crafting effective marketing strategies to reach the target audience.",
     logo: "path/to/logo4.png",
   },
   {
@@ -109,8 +112,16 @@ const data = [
 
 const Comments = () => {
   const [active, setActice] = useState(false);
+  const handleActiveBtn = () => {
+    setTimeout(() => {
+      setActice(!active);
+    }, 300);
+  };
   return (
-    <div id="comments" className="comments xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center pt-[100px] max-sm:w-full">
+    <div
+      id="comments"
+      className="comments max-w-[1440px] xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center pt-[100px] max-sm:w-full"
+    >
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Mijozlar fikrlari
       </div>
@@ -120,50 +131,35 @@ const Comments = () => {
       </h1>
 
       <div
-        className={`relative grid max-sm:flex max-sm:flex-col max-sm:items-center lg:grid-cols-3 grid-cols-2 max-md:grid-cols-1 gap-10 pt-[64px] ${!active ? "overflow-hidden h-[828px] " : " "
-          } mb-[20px]`}
+        className={`relative cards  pt-[64px] ${
+          !active ? "overflow-hidden h-[828px] " : " "
+        } mb-[30px]`}
       >
         {data?.map((item) => (
-          <div
-            key={item.id}
-            className="w-full max-md:w-[400px] max-sm:w-3/4 rounded-[10px] bg-[#F7F7F8] p-[24px]"
-          >
-            <div className="flex flex-row justify-start items-center gap-4 pb-[20px]">
-              <img className="img" src="https://s3-alpha-sig.figma.com/img/693a/dccf/a0f82c272fe283ecd855abb64cb09d18?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HLbC9PMExeRAtdWS8EvYPtdwKX7BC2ms~3hNQVE5uoV74GBJk58qJyeWECqqMr0leeEF5KHJrW2eV1XTeWjsUzO1IJ4a12hgEoIUYdrCRiQ5tgHTGgeES~CWOVV555oPzA-DKuh0qQG8IzmUYFRUl9X5gqOxTbUqKTgIlwHOZLdVbozYbLVjA3E0xU4iWSEyWu8S6zgGvLuq-SjC-klfKEpd1k2HrinWUR1EHsIIoOzujSEHlNhLIAn4vyXwkL7kTyja7-~7vUxS6qzGtFLGRXoyNDKlFi6DF0-lKh4SKUZDiEcl-ZuSrBWI0qPRIQMApueXJUUBS0mgn3jIEsjBYQ__" alt="fasd" />
-              <div className="flex w-3/4 flex-col justify-center ">
-                <h1 className="text-[#040303] text-[20px] font-[400]">
-                  {item.name}
-                </h1>
-                <p className="text-[#040303] text-[13px] font-[400] opacity-[0.6]">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-            <p className="text-[16px] font-[400] opacity-[0.6]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Architecto hic beatae vel dolores assumenda harum maxime{" "}
-            </p>
-          </div>
+          <CommentItem item={item} key={item.id} />
         ))}
         <div
-          className={`${!active && "read"
-            } absolute bottom-0 h-[440px] flex items-center justify-center w-full`}
+          className={`${
+            !active && "read"
+          } absolute bottom-0 h-[440px] flex items-center justify-center w-full`}
         >
           <button
-            onClick={() => setActice(!active)}
-            className={`${active && "active hidden"
-              }  btn px-[24px] hover:bg-[#29cc88] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px] max-sm:w-3/4`}
+            onClick={handleActiveBtn}
+            className={`${
+              active && " hidden"
+            }  btn px-[24px] hover:bg-[#29cc88] w-[200px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
           >
-            {!active ? "Hammasini o'qish" : "Yopish"}
+            Hammasini o'qish
           </button>
         </div>
       </div>
       <button
-        onClick={() => setActice(!active)}
-        className={`${!active && "hidden"
-          } active z-[100] btn px-[24px] hover:bg-[#29cc88] py-[12px] bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]  `}
+        onClick={handleActiveBtn}
+        className={`${
+          !active && "hidden"
+        }  btn px-[24px] hover:bg-[#29cc88] w-[200px] h-[50px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
       >
-        {"Yopish"}
+        Yopish
       </button>
     </div>
   );

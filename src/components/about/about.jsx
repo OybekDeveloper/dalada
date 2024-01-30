@@ -11,11 +11,11 @@ import qr from "./img/ar.svg";
 import "./about.scss";
 const About = () => {
   return (
-    <div id="about" className="about xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center  w-full mb-10 pt-[100px]">
+    <div id="about" className="about max-w-[1440px] xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center  w-full mb-10 pt-[100px]">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Ilova haqida
       </div>
-      <h1 className="text-[32px] font-bold text-center">
+      <h1 className="text-[32px] font-bold text-center pt-[30px]">
         Bizning “<span className="text-[#25b679]">Daladan</span>” ilovamizda o’z{" "}
         <br />
         mahsulotlaringizni soting va sotib oling!
@@ -94,8 +94,8 @@ const About = () => {
         </div>
       </div>
       {/* ilovani yuklash havolasi */}
-      <div className="relative h-screen max-md:h-full w-full  pt-[100px] max-sm:pt-[20px]">
-        <div className="instal h-full w-full flex flex-col items-center gap-4 mt-[100px]">
+      <div className="relative w-full  pt-[100px] max-sm:pt-[20px]">
+        <div className="instal w-full flex flex-col items-center gap-4 mt-[100px]">
           <h1 className="text-[32px] font-bold text-center text-[#040303] ">
             Ilovani tezda yuklab oling{" "}
           </h1>

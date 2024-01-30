@@ -4,8 +4,10 @@ import logo2 from "../image/Subtract (2).svg";
 import logo3 from "../image/Union.svg";
 import menuopen from "./menuopen.svg";
 import menuclose from "./menuclose.svg";
-import uzb from './uzbekistán.svg'
-import frame from './Frame.svg'
+import uzb from "./uzbekistán.svg";
+import rus from "./russian.svg";
+import eng from "./eng1.svg";
+import frame from "./Frame.svg";
 import { motion, useAnimation } from "framer-motion";
 import "./navbar.scss";
 const translations = [
@@ -13,6 +15,7 @@ const translations = [
     id: 1,
     leng: {
       title: "O'zbek",
+      url: uzb,
       content: ["O'zbek", "Rus", "Eng"],
     },
   },
@@ -20,21 +23,24 @@ const translations = [
     id: 2,
     leng: {
       title: "Rus",
-      content: ["O'zbek", "Rus", "Eng"],
-    }
+      url: rus,
+    },
   },
   {
     id: 3,
     leng: {
       title: "Eng",
-      content: ["O'zbek", "Rus", "Eng"],
-    }
-  }
-]
+      url: eng,
+    },
+  },
+];
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLengOpen, setIsLengOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("O'zbek");
+  const [selectedLanguage, setSelectedLanguage] = useState({
+    title: "O'zbek",
+    url: uzb,
+  },);
   const controls = useAnimation();
 
   const handleItemClick = () => {
@@ -44,9 +50,9 @@ const Navbar = () => {
     });
     setIsOpen(!isOpen);
   };
-
+  console.log(selectedLanguage);
   return (
-    <div className="navbar top-0 left-0 fixed w-full flex flex-row items-center h-[83px] justify-between px-[96px] max-lg:px-[20px] z-[999]">
+    <div className="navbar mx-auto max-w-[1440px] top-0 fixed w-full h-[83px]  flex flex-row items-center justify-between px-[96px] max-lg:px-[20px] z-[999]">
       <a href="#home">
         <div className="logo flex flex-row justify-center items-center">
           <img src={logo3} alt="logo" />
@@ -79,9 +85,15 @@ const Navbar = () => {
             className="flex flex-row justify-center items-center gap-[8px] p-[8px] rounded-[26px] leng"
             onClick={() => setIsLengOpen(!isLengOpen)}
           >
-            <img width={16} height={16} src={uzb} alt="fsf" />
-            <p className="font-[500] text-[16px] w-[50px]">{selectedLanguage}</p>
-            <img className={`${isLengOpen && 'leng-active'} img w-[16px] h-[16px]`} src={frame} alt="fsfaf" />
+            <img width={16} height={16} src={selectedLanguage.url} alt="fsf" />
+            <p className="font-[500] text-[16px] w-[50px]">
+              {selectedLanguage.title}
+            </p>
+            <img
+              className={`${isLengOpen && "leng-active"} img w-[16px] h-[16px]`}
+              src={frame}
+              alt="fsfaf"
+            />
           </div>
           <motion.div
             initial={{ opacity: 0, y: "100%" }}
@@ -93,10 +105,18 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="w-full leng-item  p-2 right-0 top-[50px] text-[18px]  absolute flex flex-col justify-start items-start gap-[12px] "
           >
-            {translations?.map(item=>(
-              <p key={item.id} onClick={()=>{setSelectedLanguage(item.leng.title);setIsLengOpen(false)}} className="">
-                {item.leng.title}
-              </p>
+            {translations?.map((item) => (
+              <div
+                className="leng-content flex items-center gap-1"
+                key={item.id}
+                onClick={() => {
+                  setSelectedLanguage(item.leng);
+                  setIsLengOpen(false);
+                }}
+              >
+                <img width={16} height={16} src={item.leng.url} alt="lenguage" />
+                <p>{item.leng.title}</p>
+              </div>
             ))}
           </motion.div>
         </div>
