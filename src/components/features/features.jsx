@@ -99,9 +99,9 @@ const Features = () => {
           Tizimning ishlashi: uzluksiz funksionallik <br />
           uchun asosiy jarayonlarni ochish
         </h1>
-        <div className="lg:flex md:grid grid-cols-2 max-md:flex max-md:flex-col max-md:justify-center flex-row items-center lg:gap-[150px] md:gap-[100px] mt-[50px]">
-          <div className="xl:w-[230px] lg:w-[180px] md:w-[200px] max-md:w-3/4 relative h-[220px] flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center max-sm:w-3/5 max-sm:text-center">
-            <h1 className="lg:text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
+        <div className="max-md:w-2/3 max-sm:w-4/5 lg:flex md:grid grid-cols-2 max-md:flex max-md:flex-col max-md:justify-center flex-row items-center lg:gap-[150px] md:gap-x-[150px] md:gap-y-[50px] max-md:gap-y-[50px] mt-[50px]">
+          <div className="xl:w-[230px] lg:w-[180px] md:w-[200px] max-md:w-4/5 max-sm:w-11/12 relative md:h-[220px] flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
+            <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               01
             </h1>
             <h2 className="text-[23px] text-white font-bold">Yuklab olish</h2>
@@ -112,9 +112,8 @@ const Features = () => {
               <img width={"160px"} src={arrow1} alt="arrow" />
             </div>
           </div>
-
-          <div className="xl:w-[230px] lg:w-[180px] md:w-[200px] max-md:w-3/4 relative h-[220px] flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center max-sm:w-3/5 max-sm:text-center">
-            <h1 className="lg:text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
+          <div className="xl:w-[230px] lg:w-[180px] md:w-[200px] max-md:w-4/5 max-sm:w-11/12 relative md:h-[220px] flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
+            <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               02
             </h1>
             <h2 className="text-[23px] text-white font-bold">
@@ -128,9 +127,8 @@ const Features = () => {
               <img width={"160px"} src={arrow2} alt="arrow" />
             </div>
           </div>
-
-          <div className="xl:w-[230px] lg:w-[180px] md:w-[200px] max-md:w-3/4 relative h-[220px] flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center max-sm:w-3/5 max-sm:text-center">
-            <h1 className="lg:text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
+          <div className="xl:w-[230px] lg:w-[180px] md:w-[200px] max-md:w-4/5 max-sm:w-11/12 relative md:h-[220px] flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
+            <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               03
             </h1>
             <h2 className="text-[23px] text-white font-bold">Tugallandi!</h2>

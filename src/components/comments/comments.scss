@@ -3,8 +3,7 @@
     border-radius: 48px;
     width: 48px;
     height: 48px;
-    background: url("https://s3-alpha-sig.figma.com/img/49cc/b670/9009a0b29505d3eeed9505116eb96da2?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VIWLyBhrDdk1t5zmHpBN2sQGlZmi3zwwjc0Y4IKsNy3W2ALjSR1w2NxGUnBdNaaJT8H-Z0LTjfzvA17DIxkV-SOIbMPj6rIckAvyNh1oPekhwwiAhGcaAkdL8KbxdMGU3WdpOi5YDTF8tbyMGgjN~6JQaOLZf7IdJEnWmyK5QNSR6vqNQqSp1FU9e-oERBI0WLycJN0Za2Pn3JMXOIdv-sDe0pDvhFqPkST6HrBNZ0Nc1fRB0qsX~IFo4Yzz3ICD03n75aa-w7XD47Isp3xoSGxE4usnDnO~1iEM9992RdfZizcJrCM1JYWvkrvNhLDzfqTZNOW-ic7NBc1d0NfpSg__")
-      lightgray 50% / cover no-repeat;
+   object-fit: cover;
   }
   .read {
     background: linear-gradient(

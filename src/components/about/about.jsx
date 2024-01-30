@@ -28,7 +28,7 @@ const About = () => {
               src={img1}
               alt="asdf"
             />
-            <div className="md:w-[418px] max-md:w-[300px] bgeffect absolute top-0"></div>
+            <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
           <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold pr-[160px] max-sm:pr-0 max-sm:text-[24px]">
@@ -64,7 +64,7 @@ const About = () => {
               src={img2}
               alt="asdf"
             />
-            <div className="md:w-[418px] max-md:w-[300px] bgeffect absolute top-0"></div>
+            <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
         </div>
         <img
@@ -79,7 +79,7 @@ const About = () => {
               src={img3}
               alt="asdf"
             />
-            <div className="md:w-[418px] max-md:w-[300px] bgeffect absolute top-0"></div>
+            <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
           <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold pr-[160px] max-sm:pr-0 max-sm:text-[24px]">
@@ -94,19 +94,19 @@ const About = () => {
         </div>
       </div>
       {/* ilovani yuklash havolasi */}
-      <div className="relative max-sm:h-[900px] h-[700px]  w-full  pt-[100px] max-sm:pt-[20px]">
-        <div className="absolute instal w-full flex flex-col items-center gap-4 mt-[100px]">
+      <div className="relative h-screen max-md:h-full w-full  pt-[100px] max-sm:pt-[20px]">
+        <div className="instal h-full w-full flex flex-col items-center gap-4 mt-[100px]">
           <h1 className="text-[32px] font-bold text-center text-[#040303] ">
             Ilovani tezda yuklab oling{" "}
           </h1>
-          <p className="text-[16px] opacity-[0.7] font-[400] text-center text-[#040303] w-2/3">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem{" "}
+          <p className="w-1/2 max-md:w-3/4 text-[16px] opacity-[0.7] font-[400] text-center text-[#040303]">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
              accusantium doloremque laudantium, to
           </p>
           <div className="flex justify-center items-center py-4 flex-col  md:flex-row gap-[32px] *: ">
-            <img className="w-[180px] max-sm:w-[220px]" src={appstore} alt="logo" />
-            <img className="w-[180px] max-sm:w-[220px]"src={playmarket} alt="logo" />
-            <img className="w-[180px] max-sm:w-[220px]" src={appgalery} alt="logo" />
+            <img className="w-[180px]" src={appstore} alt="logo" />
+            <img className="w-[180px]"src={playmarket} alt="logo" />
+            <img className="w-[180px]" src={appgalery} alt="logo" />
           </div>
           <h1 className="text-[#040303] text-[23px] font-bold text-center">
             QR-kodni skanerlang va qulay
@@ -114,10 +114,10 @@ const About = () => {
             usulda yuklab oling
           </h1>
           <div className="qr flex justify-center items-center">
-            <img src={qr} alt="" />
+            <img src={qr} alt="qr" />
           </div>
         </div>
-        <div className="opc absolute h-full w-full z-[-1]"></div>
+        <div className="opc rounded-[32px] max-md:rounded-none top-0 left-0 absolute h-full w-full z-[-1] mt-[100px]"></div>
       </div>
     </div>
   );

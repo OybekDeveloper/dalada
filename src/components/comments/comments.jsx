@@ -126,11 +126,11 @@ const Comments = () => {
         {data?.map((item) => (
           <div
             key={item.id}
-            className="w-[350px] max-md:w-[400px] max-sm:w-3/4 rounded-[10px] bg-[#F7F7F8] p-[24px]"
+            className="w-full max-md:w-[400px] max-sm:w-3/4 rounded-[10px] bg-[#F7F7F8] p-[24px]"
           >
             <div className="flex flex-row justify-start items-center gap-4 pb-[20px]">
-              <div className="img"></div>
-              <div className="flex flex-col justify-center ">
+              <img className="img" src="https://s3-alpha-sig.figma.com/img/693a/dccf/a0f82c272fe283ecd855abb64cb09d18?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HLbC9PMExeRAtdWS8EvYPtdwKX7BC2ms~3hNQVE5uoV74GBJk58qJyeWECqqMr0leeEF5KHJrW2eV1XTeWjsUzO1IJ4a12hgEoIUYdrCRiQ5tgHTGgeES~CWOVV555oPzA-DKuh0qQG8IzmUYFRUl9X5gqOxTbUqKTgIlwHOZLdVbozYbLVjA3E0xU4iWSEyWu8S6zgGvLuq-SjC-klfKEpd1k2HrinWUR1EHsIIoOzujSEHlNhLIAn4vyXwkL7kTyja7-~7vUxS6qzGtFLGRXoyNDKlFi6DF0-lKh4SKUZDiEcl-ZuSrBWI0qPRIQMApueXJUUBS0mgn3jIEsjBYQ__" alt="fasd" />
+              <div className="flex w-3/4 flex-col justify-center ">
                 <h1 className="text-[#040303] text-[20px] font-[400]">
                   {item.name}
                 </h1>

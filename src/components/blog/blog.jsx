@@ -17,7 +17,7 @@ const Blog = () => {
                     <br />
                     foydali maslahatlar
                 </h1>
-                <div className="xl:flex max-xl:grid  max-xl:grid-cols-2 max-md:grid-cols-1 flexrow justify-center gap-[48px] pt-[64px]">
+                <div className="xl:flex max-xl:grid  max-xl:grid-cols-2 max-md:grid-cols-1 flex-row justify-center gap-[48px] pt-[64px]">
                     <div className="flex flex-col mb-[100px] w-full  justify-center items-center relative">
                         <img width={"384px"} src={img3} alt="" />
                         <div className="w-[320px]  blogimg top-[144px] absolute p-[16px] flex flex-col justify-between">

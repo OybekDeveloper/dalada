@@ -14,24 +14,21 @@
   .btn {
     position: relative; /* Qo'shilgan qismatining o'ziga ega bo'lishi uchun */
     transition: transform 0.3s ease;
-  
+
     img {
       transition: transform 0.3s ease;
     }
-  
+
     &:hover {
       img {
         transform: translateX(10px);
       }
     }
-  
+
     &:active {
       img {
         transform: translateX(0); /* Tugaganidan so'ng orqaga qaytish */
       }
     }
   }
-  
-  
-  
 }
