@@ -52,7 +52,7 @@ const Navbar = () => {
   };
   console.log(selectedLanguage);
   return (
-    <div className="navbar mx-auto max-w-[1440px] top-0 fixed w-full h-[83px]  flex flex-row items-center justify-between px-[96px] max-lg:px-[20px] z-[999]">
+    <div className="navbar mx-auto top-0 fixed w-full h-[83px] flex flex-row items-center justify-between px-[96px] max-lg:px-[20px] z-[999]">
       <a href="#home">
         <div className="logo flex flex-row justify-center items-center">
           <img src={logo3} alt="logo" />
