@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo1 from "../image/Subtract (1).svg";
 import logo2 from "../image/Subtract (2).svg";
 import logo3 from "../image/Union.svg";
-import menuopen from "./menuopen.svg";
-import menuclose from "./menuclose.svg";
-import uzb from "./uzbekistán.svg";
-import rus from "./russian.svg";
-import eng from "./eng1.svg";
-import frame from "./Frame.svg";
+import menuopen from "./img/menuopen.svg";
+import menuclose from "./img/menuclose.svg";
+import uzb from "./img/uzbekistán.svg";
+import rus from "./img/russian.svg";
+import eng from "./img/eng1.svg";
+import frame from "./img/Frame.svg";
 import { motion, useAnimation } from "framer-motion";
 import "./navbar.scss";
 const translations = [
@@ -22,14 +22,14 @@ const translations = [
   {
     id: 2,
     leng: {
-      title: "Rus",
+      title: "Русский",
       url: rus,
     },
   },
   {
     id: 3,
     leng: {
-      title: "Eng",
+      title: "English",
       url: eng,
     },
   },
@@ -40,8 +40,16 @@ const Navbar = () => {
   const [selectedLanguage, setSelectedLanguage] = useState({
     title: "O'zbek",
     url: uzb,
-  },);
+  });
+  const [defaultLanguage, setDefaultLanguage] = useState([]);
   const controls = useAnimation();
+
+  useEffect(() => {
+    const newData = translations.filter(
+      (item) => item.leng.title !== selectedLanguage.title
+    );
+    setDefaultLanguage(newData);
+  }, [selectedLanguage.title]);
 
   const handleItemClick = () => {
     controls.start({
@@ -50,7 +58,6 @@ const Navbar = () => {
     });
     setIsOpen(!isOpen);
   };
-  console.log(selectedLanguage);
   return (
     <div className="navbar mx-auto top-0 fixed w-full h-[83px] flex flex-row items-center justify-between px-[96px] max-lg:px-[20px] z-[999]">
       <a href="#home">
@@ -86,7 +93,7 @@ const Navbar = () => {
             onClick={() => setIsLengOpen(!isLengOpen)}
           >
             <img width={16} height={16} src={selectedLanguage.url} alt="fsf" />
-            <p className="font-[500] text-[16px] w-[50px]">
+            <p className="font-[500] text-[14px] w-[50px]">
               {selectedLanguage.title}
             </p>
             <img
@@ -105,7 +112,7 @@ const Navbar = () => {
             transition={{ duration: 0.5 }}
             className="w-full leng-item  p-2 right-0 top-[50px] text-[18px]  absolute flex flex-col justify-start items-start gap-[12px] "
           >
-            {translations?.map((item) => (
+            {defaultLanguage?.map((item) => (
               <div
                 className="leng-content flex items-center gap-1"
                 key={item.id}
@@ -114,8 +121,13 @@ const Navbar = () => {
                   setIsLengOpen(false);
                 }}
               >
-                <img width={16} height={16} src={item.leng.url} alt="lenguage" />
-                <p>{item.leng.title}</p>
+                <img
+                  width={16}
+                  height={16}
+                  src={item.leng.url}
+                  alt="lenguage"
+                />
+                <p className="text-[14px] font-[500]">{item.leng.title}</p>
               </div>
             ))}
           </motion.div>

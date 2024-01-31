@@ -14,7 +14,7 @@ import {
 import "./features.scss";
 const Features = () => {
   return (
-    <div id="features" className="features max-w-[1440px] max-sm:w-11/12 xl:w-10/12 md:w-11/12 mx-auto flex items-center flex-col pt-[100px]">
+    <div id="features" className="features max-w-[1440px] w-full xl:w-10/12 md:w-11/12 mx-auto flex items-center flex-col pt-[100px]">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Xususiyatlar
       </div>
@@ -25,7 +25,7 @@ const Features = () => {
       </h1>
       <div className="flex lg:flex-row max-lg:flex-col justify-center items-center pt-[64px] lg:gap-10 gap-20 text-[#040303] ">
         <div className="lg:flex max-lg:grid max-lg:grid-cols-2  max-md:grid-cols-1 flex-col gap-[100px] ">
-          <div className="w-full h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
+          <div className="w-full max-lg:w-3/4 mx-auto h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
             <img src={megaphone} alt="img" />
             <div className="pl-[32px] md:flex md:flex-col md:justify-center lg:justify-start md:items-center lg:items-start md:text-center lg:text-start">
               <h1 className="text-[26px] font-bold">Mahsulotlar reklamasi</h1>
@@ -35,7 +35,7 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
+          <div className="w-full max-lg:w-3/4 mx-auto h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
             <img src={route} alt="img" />
             <div className="pl-[32px] md:flex md:flex-col md:justify-center lg:justify-start md:items-center lg:items-start md:text-center lg:text-start">
               <h1 className="text-[26px] font-bold">Daladan uyingizga</h1>
@@ -45,7 +45,7 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
+          <div className="w-full max-lg:w-3/4 mx-auto h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
             <img src={sack} alt="img" />
             <div className="pl-[32px] md:flex md:flex-col md:justify-center lg:justify-start md:items-center lg:items-start md:text-center lg:text-start">
               <h1 className="text-[26px] font-bold">Qulay narx</h1>
@@ -59,7 +59,7 @@ const Features = () => {
           <img className="w-[400px] max-sm:w-[320px]" src={istaklar2} alt="" />
         </div>
         <div className="lg:flex max-lg:grid max-lg:grid-cols-2  max-md:grid-cols-1 flex-col gap-[100px] ">
-          <div className="w-full h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
+          <div className="w-full max-lg:w-3/4 mx-auto h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
             <img src={magicWand} alt="img" />
             <div className="pl-[32px] md:flex md:flex-col md:justify-center lg:justify-start md:items-center lg:items-start md:text-center lg:text-start">
               <h1 className="text-[26px] font-bold">Tushunarli dizayn</h1>
@@ -69,7 +69,7 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
+          <div className="w-full max-lg:w-3/4 mx-auto h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
             <img src={resources} alt="img" />
             <div className="pl-[32px] md:flex md:flex-col md:justify-center lg:justify-start md:items-center lg:items-start md:text-center lg:text-start">
               <h1 className="text-[26px] font-bold">Qulay navigatsiya</h1>
@@ -79,7 +79,7 @@ const Features = () => {
               </p>
             </div>
           </div>
-          <div className="w-full h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
+          <div className="w-full max-lg:w-3/4 mx-auto h-[88px] flex lg:flex-row md:flex-col justify-center items-center">
             <img src={review} alt="img" />
             <div className="pl-[32px] md:flex md:flex-col md:justify-center lg:justify-start md:items-center lg:items-start md:text-center lg:text-start">
               <h1 className="text-[26px] font-bold">Oson ro’yxatdan o’tish</h1>

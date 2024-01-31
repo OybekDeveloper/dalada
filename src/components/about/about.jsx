@@ -101,12 +101,18 @@ const About = () => {
           </h1>
           <p className="w-1/2 max-md:w-3/4 text-[16px] opacity-[0.7] font-[400] text-center text-[#040303]">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-             accusantium doloremque laudantium, to
+            accusantium doloremque laudantium, to
           </p>
           <div className="flex justify-center items-center py-4 flex-col  md:flex-row gap-[32px] *: ">
-            <img className="w-[180px]" src={appstore} alt="logo" />
-            <img className="w-[180px]"src={playmarket} alt="logo" />
-            <img className="w-[180px]" src={appgalery} alt="logo" />
+            <a  href="https://www.apple.com/app-store/">
+              <img className="w-[170px]" src={appstore} alt="logo" /> 
+            </a>
+            <a href="https://play.google.com/store">
+              <img className="w-[180px]" src={playmarket} alt="logo" /> 
+            </a>
+            <a href="https://appgallery.huawei.com/Featured">
+              <img className="w-[180px]" src={appgalery} alt="logo" />  
+            </a>
           </div>
           <h1 className="text-[#040303] text-[23px] font-bold text-center">
             QR-kodni skanerlang va qulay

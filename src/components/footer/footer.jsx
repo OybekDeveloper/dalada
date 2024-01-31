@@ -52,9 +52,15 @@ const Footer = () => {
           <div className="flex flex-col justify-center max-sm:w-full">
             <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>
             <div className="flex  py-4 flex-col  md:flex-row gap-[32px] *: ">
-              <img className="w-[180px]" src={appstore} alt="logo" />
-              <img className="w-[180px]" src={playmarket} alt="logo" />
-              <img className="w-[180px]" src={appgalery} alt="logo" />
+            <a href="https://www.apple.com/app-store/">
+              <img className="w-[170px]" src={appstore} alt="logo" /> 
+            </a>
+            <a href="https://play.google.com/store">
+              <img className="w-[180px]" src={playmarket} alt="logo" /> 
+            </a>
+            <a href="https://appgallery.huawei.com/Featured">
+              <img className="w-[180px]" src={appgalery} alt="logo" />  
+            </a>
             </div>
           </div>
           <div></div>
