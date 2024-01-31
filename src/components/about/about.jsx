@@ -11,7 +11,7 @@ import qr from "./img/ar.svg";
 import "./about.scss";
 const About = () => {
   return (
-    <div id="about" className="about max-w-[1440px] xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center  w-full mb-10 pt-[100px]">
+    <div id="about" className="about max-w-[1440px] xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center  w-full mb-10 pt-[100px] overflow-hidden">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Ilova haqida
       </div>
@@ -34,7 +34,7 @@ const About = () => {
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold pr-[160px] max-sm:pr-0 max-sm:text-[24px]">
               Ilovadan telefon raqamingiz orqali ro’yxatdan o’ting
             </h1>
-            <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[30px]">
+            <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[20px]">
               Ilovadan foydalanish uchun shaxsiy telefon raqamingiz orqali
               ro’yxatdan o’ting. Keyin sizga raqamingizni tasdiqlash uchun 4
               xonali sms-kod yuboriladi. Mana shu sms-kodni kiriting va
@@ -52,7 +52,7 @@ const About = () => {
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold pr-[160px] max-sm:pr-0 max-sm:text-[24px]">
               Istaklar bo’limining mavjudligi
             </h1>
-            <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[30px]">
+            <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[20px]">
               Sizga yoqqan har bitta mahsulotni Istaklar bo’limiga saqlab
               qo’ying. Bu esa sizga keyingi safar yoqqan mahsulotni izlash uchun
               ortiqcha vaqt sarflamaslikka imkoniyat yaratadi
@@ -85,7 +85,7 @@ const About = () => {
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold pr-[160px] max-sm:pr-0 max-sm:text-[24px]">
               Tushunarli va qulay bo’lgan bosh sahifa
             </h1>
-            <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[30px]">
+            <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[20px]">
               Bosh sahifada siz o’zingizga kerakli bo’lgan kategoriya va
               mahsulotlarni tez va oson topshingiz mumkin. Har bitta mahsulot
               haqida tushunarli ma’lumotlarga ega bo’lishingiz mumkin
@@ -94,7 +94,7 @@ const About = () => {
         </div>
       </div>
       {/* ilovani yuklash havolasi */}
-      <div className="relative w-full  pt-[100px] max-sm:pt-[20px]">
+      <div className="relative w-full  pt-[100px] max-sm:pt-[20px] mb-[100px]">
         <div className="instal w-full flex flex-col items-center gap-4 mt-[100px]">
           <h1 className="text-[32px] font-bold text-center text-[#040303] ">
             Ilovani tezda yuklab oling{" "}

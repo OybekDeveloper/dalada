@@ -125,7 +125,7 @@ const Comments = () => {
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Mijozlar fikrlari
       </div>
-      <h1 className="text-[32px] font-bold text-[#040303] pt-[18px] max-sm:text-center">
+      <h1 className="text-[32px] font-bold text-[#040303] pt-[25px] max-sm:text-center">
         Xursand <span className="text-[#25b679]">mijozlarimiz</span> fikrlarini
         tinglang
       </h1>

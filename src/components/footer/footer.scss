@@ -1,10 +1,10 @@
 .footer {
-    .social-item{
-        &:hover{
-            color: #29cc88!important;
-        }
-    }
   background: rgba(223, 223, 226, 0.2);
+  .social-item {
+    &:hover {
+      color: #29cc88 !important;
+    }
+  }
   .install {
     div {
       transition: all 0.3s ease-in-out;

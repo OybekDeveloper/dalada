@@ -29,7 +29,7 @@ const App = () => {
           <Loader />
         </div>
       ):(
-      <div id="home" className="app">
+      <div id="home" className="app relative">
         <Navbar />
         <div className="home max-w-[1440px] xl:w-10/12 md:w-11/12 w-full mx-auto flex flex-col items-center mt-[96px] lg:h-[768px] md:h-[700px] sm:h-[570px] max-sm:h-[800px] rounded-[24px] max-sm:rounded-none text-[#fff] overflow-hidden mb-[30px]">
           <h1 className="text-4xl font-[600] pt-[88px] text-center ">

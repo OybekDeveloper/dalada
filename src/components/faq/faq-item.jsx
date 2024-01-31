@@ -33,7 +33,7 @@ const FaqItem = () => {
           ref={contentRef}
           className={`faqbtn__content ${
             active ? "transition-height active" : ""
-          } text-[#040303] text-[16px] opacity-[0.6] `}
+          } text-[16px]`}
         >
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
