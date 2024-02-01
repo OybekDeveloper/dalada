@@ -15,9 +15,9 @@ const Footer = () => {
   return (
     <div className="w-full flex justify-center footer mt-[100px]">
       <div className="w-11/12  bottom-0 flex flex-col pt-[100px] pb-[30px]">
-        <div className="max-w-[1440px] mx-auto w-full aloqa flex max-sm:flex-col gap-10 justify-between pb-10 ">
-          <div className="flex xl:flex-row max-xl:flex-col gap-10 ">
-            <div className="flex flex-col  items-start gap-[21px] max-sm:w-full">
+        <div className="max-w-[1440px] mx-auto w-full aloqa flex max-sm:flex-col gap-10 items-start max-md:gap-[200px] max-sm:gap-10  pb-10 ">
+          <div className="flex xl:flex-row max-md:flex-col gap-10 ">
+            <div className="flex flex-col  items-start gap-[21px]">
               <div className="logo flex flex-row justify-center items-center">
                 <img src={logo3} alt="logo" />
                 <div className="flex flex-col items-start">
@@ -53,15 +53,15 @@ const Footer = () => {
           </div>
           <div className="flex flex-col  justify-center max-sm:w-full">
             <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>
-            <div className="flex py-4 xl:flex-row max-xl:flex-col gap-[32px] *: ">
+            <div className="flex py-4 xl:flex-row max-md:flex-col gap-3 max-md:gap-6">
               <a href="https://www.apple.com/app-store/">
-                <img className="w-[180px]" src={appstore} alt="logo" />
+                <img className="w-[150px]" src={appstore} alt="logo" />
               </a>
               <a href="https://play.google.com/store">
-                <img className="w-[180px]" src={playmarket} alt="logo" />
+                <img className="w-[150px]" src={playmarket} alt="logo" />
               </a>
               <a href="https://appgallery.huawei.com/Featured">
-                <img className="w-[180px]" src={appgalery} alt="logo" />
+                <img className="w-[150px]" src={appgalery} alt="logo" />
               </a>
             </div>
           </div>

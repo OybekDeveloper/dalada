@@ -95,11 +95,11 @@ const Features = () => {
         <div className="btn mt-[64px] flex justify-center px-[16px] py-[6px] text-[14px] text-center text-[#25b679] bg-[#FFF] rounded-[29px]">
           Qanday ishlaydi?
         </div>
-        <h1 className="text-[32px] text-[#fff] font-bold text-center pt-[30px]">
+        <h1 className="text-[32px] text-[#fff] font-bold text-center pt-[30px] w-11/12">
           Tizimning ishlashi: uzluksiz funksionallik <br />
           uchun asosiy jarayonlarni ochish
         </h1>
-        <div className="max-sm:w-4/5 sm:w-4/5 lg:flex sm:grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:justify-center flex-row items-center lg:gap-[150px] sm:gap-x-[100px] gap-y-[50px] mt-[50px]">
+        <div className="max-sm:w-4/5 sm:w-4/5 lg:flex sm:grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:justify-center flex-row items-center lg:gap-[150px] sm:gap-x-[100px] gap-y-[50px] mt-[50px] mb-12">
           <div className="max-sm:w-2/3 sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
             <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               01

@@ -21,7 +21,7 @@ const About = () => {
         mahsulotlaringizni soting va sotib oling!
       </h1>
       <div className="mt-[100px] flex flex-col justify-center items-center max-sm:gap-20">
-        <div className="flex flex-row max-sm:gap-5 max-sm:flex-col justify-around items-center lg:gap-[128px] md:gap-[50px] ">
+        <div className="flex flex-row max-sm:gap-5 max-sm:flex-col justify-around items-center lg:gap-[128px] md:gap-[100px] ">
           <div className="relative flex justify-center items-center">
             <img
               className="z-[10] xl:w-[280px] lg:w-[270px] md:w-[250px] sm:w-[200px] max-md:w-[250px]"
@@ -30,7 +30,7 @@ const About = () => {
             />
             <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
-          <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
+          <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4 sm:pl-12">
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold max-sm:w-full w-3/4 max-sm:pr-0 max-sm:text-[24px]">
               Ilovadan telefon raqamingiz orqali ro’yxatdan o’ting
             </h1>
@@ -81,7 +81,7 @@ const About = () => {
             />
             <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
-          <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
+          <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4 sm:pl-12">
             <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold max-sm:w-full w-3/4 max-sm:pr-0 max-sm:text-[24px]">
               Tushunarli va qulay bo’lgan bosh sahifa
             </h1>
