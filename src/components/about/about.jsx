@@ -103,7 +103,7 @@ const About = () => {
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, to
           </p>
-          <div className="flex justify-center items-center py-4 flex-col  sm:flex-row gap-[32px] *: ">
+          <div className="flex justify-center items-center py-10 flex-col  sm:flex-row gap-[32px]">
             <a href="https://www.apple.com/app-store/">
               <img className="w-[170px]" src={appstore} alt="logo" />
             </a>
@@ -114,12 +114,12 @@ const About = () => {
               <img className="w-[180px]" src={appgalery} alt="logo" />
             </a>
           </div>
-          <h1 className="text-[#040303] text-[23px] font-[500] text-center">
+          <h1 className="text-[#040303] text-[23px] font-[500] text-center pt-[25px]">
             QR-kodni skanerlang va qulay
             <br />
             usulda yuklab oling
           </h1>
-          <div className="qr flex justify-center items-center">
+          <div className="qr flex justify-center items-center mt-[25px]">
             <img src={qr} alt="qr" />
           </div>
         </div>
