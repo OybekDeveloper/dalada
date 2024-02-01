@@ -16,11 +16,11 @@ import Loader from "../loader/loader";
 const App = () => {
   const [isLoading , setIsLoading]= useState(true);
 
-  // useEffect(()=>{
-  //   setTimeout(() => {
-  //       setIsLoading(false);
-  //   }, 3000);
-  // },[])
+  useEffect(()=>{
+    setTimeout(() => {
+        setIsLoading(false);
+    }, 3000);
+  },[])
 
   return (
     <>
