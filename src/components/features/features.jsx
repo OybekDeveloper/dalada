@@ -91,7 +91,7 @@ const Features = () => {
         </div>
       </div>
       {/* qanday ishlaydi  */}
-      <div className="mt-[100px] lg:h-[570px] md:h-full rounded-[24px] max-sm:rounded-none bg-[#25B679] w-full flex flex-col items-center  mb-[20px] pb-2">
+      <div className="mt-[200px] lg:h-[570px] md:h-full rounded-[24px] max-sm:rounded-none bg-[#25B679] w-full flex flex-col items-center  mb-[20px] pb-2">
         <div className="btn mt-[64px] flex justify-center px-[16px] py-[6px] text-[14px] text-center text-[#25b679] bg-[#FFF] rounded-[29px]">
           Qanday ishlaydi?
         </div>
