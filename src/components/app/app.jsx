@@ -71,7 +71,7 @@ const App = () => {
         <Comments />
         <Blog />
         <Faq />
-        <Footer />
+        {/* <Footer /> */}
       </div>
       )}
     </>
