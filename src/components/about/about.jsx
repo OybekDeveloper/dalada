@@ -31,7 +31,7 @@ const About = () => {
             <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
           <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
-            <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold w-3/4 max-sm:pr-0 max-sm:text-[24px]">
+            <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold max-sm:w-full w-3/4 max-sm:pr-0 max-sm:text-[24px]">
               Ilovadan telefon raqamingiz orqali ro’yxatdan o’ting
             </h1>
             <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[20px]">
@@ -49,7 +49,7 @@ const About = () => {
         />
         <div className="flex flex-row max-sm:gap-5 max-sm:flex-col-reverse justify-around items-center lg:gap-[128px] md:gap-[50px] ">
           <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
-            <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold w-3/4 max-sm:pr-0 max-sm:text-[24px]">
+            <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold max-sm:w-full w-3/4 max-sm:pr-0 max-sm:text-[24px]">
               Istaklar bo’limining mavjudligi
             </h1>
             <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[20px]">
@@ -82,7 +82,7 @@ const About = () => {
             <div className="w-[418px] max-lg:w-[300px] bgeffect absolute top-0"></div>
           </div>
           <div className="flex flex-col w-[576px] max-sm:w-full max-md:w-[400px] z-10 px-4">
-            <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold w-3/4 max-sm:pr-0 max-sm:text-[24px]">
+            <h1 className="md:text-[23px] max-md:text-[18px] text-[#040303] font-bold max-sm:w-full w-3/4 max-sm:pr-0 max-sm:text-[24px]">
               Tushunarli va qulay bo’lgan bosh sahifa
             </h1>
             <p className="text-[18px] text-[#040303] font-[400] opacity-[0.7] pt-[20px]">
@@ -104,14 +104,14 @@ const About = () => {
             accusantium doloremque laudantium, to
           </p>
           <div className="flex justify-center items-center py-4 flex-col  sm:flex-row gap-[32px] *: ">
-            <a  href="https://www.apple.com/app-store/">
-              <img className="w-[170px]" src={appstore} alt="logo" /> 
+            <a href="https://www.apple.com/app-store/">
+              <img className="w-[170px]" src={appstore} alt="logo" />
             </a>
             <a href="https://play.google.com/store">
-              <img className="w-[180px]" src={playmarket} alt="logo" /> 
+              <img className="w-[180px]" src={playmarket} alt="logo" />
             </a>
             <a href="https://appgallery.huawei.com/Featured">
-              <img className="w-[180px]" src={appgalery} alt="logo" />  
+              <img className="w-[180px]" src={appgalery} alt="logo" />
             </a>
           </div>
           <h1 className="text-[#040303] text-[23px] font-[500] text-center">
