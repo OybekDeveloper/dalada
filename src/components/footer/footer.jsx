@@ -65,7 +65,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div></div>
         </div>
         <img src={line} alt=" max-w-[1440px] w-full" />
         <div className="max-w-[1440px] mx-auto w-full flex flex-row justify-between max-sm:flex-col max-sm:items-start">

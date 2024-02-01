@@ -122,7 +122,7 @@ const Comments = () => {
       id="comments"
       className="comments max-w-[1440px] xl:w-10/12 md:w-11/12 mx-auto flex flex-col items-center pt-[100px] max-sm:w-full"
     >
-      <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
+      <div className="flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Mijozlar fikrlari
       </div>
       <h1 className="text-[32px] font-bold text-[#040303] pt-[25px] max-sm:text-center">
