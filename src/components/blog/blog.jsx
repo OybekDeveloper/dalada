@@ -12,7 +12,7 @@ const Blog = () => {
                 <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
                     Blog
                 </div>
-                <h1 className="text-[32px] font-bold text-[#040303] pt-[18px]  text-center ">
+                <h1 className="text-[32px] font-bold text-[#040303] pt-[25px]  text-center ">
                     Dehqon va fermerlarga agronomlardan
                     <br />
                     foydali maslahatlar

@@ -15,7 +15,7 @@ const About = () => {
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Ilova haqida
       </div>
-      <h1 className="text-[32px] font-bold text-center pt-[30px]">
+      <h1 className="text-[32px] font-bold text-center pt-[25px]">
         Bizning “<span className="text-[#25b679]">Daladan</span>” ilovamizda o’z{" "}
         <br />
         mahsulotlaringizni soting va sotib oling!

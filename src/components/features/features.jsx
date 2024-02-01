@@ -18,7 +18,7 @@ const Features = () => {
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Xususiyatlar
       </div>
-      <h1 className="max-sm:w-11/12 text-3xl text-center pt-[12px] font-bold">
+      <h1 className="max-sm:w-11/12 text-3xl text-center pt-[25px] font-bold">
         Ilovamiz xususiyatlari sizga
         <br />
         albatta yoqadi{" "}
@@ -95,7 +95,7 @@ const Features = () => {
         <div className="btn mt-[64px] flex justify-center px-[16px] py-[6px] text-[14px] text-center text-[#25b679] bg-[#FFF] rounded-[29px]">
           Qanday ishlaydi?
         </div>
-        <h1 className="text-[32px] text-[#fff] font-bold text-center pt-[30px] w-11/12">
+        <h1 className="text-[32px] text-[#fff] font-bold text-center pt-[25px] w-11/12">
           Tizimning ishlashi: uzluksiz funksionallik <br />
           uchun asosiy jarayonlarni ochish
         </h1>
