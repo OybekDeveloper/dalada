@@ -42,7 +42,7 @@
     border: 1px solid var(--Gray, #dfdfe2);
     background: var(--White, #fff);
     li {
-      padding: 4px;
+      padding: 5px 10px;
       transition: all 0.2s ease-in-out;
       &:hover {
         background: var(--Gray, #f2f2f3);
