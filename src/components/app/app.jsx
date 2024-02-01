@@ -16,15 +16,15 @@ import Loader from "../loader/loader";
 const App = () => {
   const [isLoading , setIsLoading]= useState(true);
 
-  useEffect(()=>{
-    setTimeout(() => {
-        setIsLoading(false);
-    }, 3000);
-  },[])
+  // useEffect(()=>{
+  //   setTimeout(() => {
+  //       setIsLoading(false);
+  //   }, 3000);
+  // },[])
 
   return (
     <>
-      {isLoading ? (
+      {!isLoading ? (
         <div className="flex justify-center items-center w-full h-screen">
           <Loader />
         </div>
