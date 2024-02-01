@@ -18,7 +18,7 @@ const FaqItem = () => {
     <div>
       <div className="faqbtn flex flex-col justify-between gap-[20px] pt-[32px]">
         <div onClick={() => setActive(!active)} className="flex flex-row justify-between items-center cursor-pointer">
-          <h1 className="text-[#040303] font-[500] text-[18px] max-sm:w-4/5">
+          <h1 className="text-[#040303] font-[500] text-[18px] w-11/12">
             Before we dive into your career, tell me a little bit about
             yourself and what’s important to you
           </h1>

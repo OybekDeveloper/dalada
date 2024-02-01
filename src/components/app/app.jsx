@@ -31,7 +31,7 @@ const App = () => {
       ):(
       <div id="home" className="app relative">
         <Navbar />
-        <div className="home max-w-[1440px] xl:w-10/12 md:w-11/12 w-full mx-auto flex flex-col items-center mt-[96px] lg:h-[768px] md:h-[700px] sm:h-[570px] max-sm:h-[800px] rounded-[24px] max-sm:rounded-none text-[#fff] overflow-hidden mb-[30px]">
+        <div className="home max-w-[1440px] xl:w-10/12 max-xl:w-11/12 max-sm:w-full mx-auto flex flex-col items-center mt-[96px] lg:h-[768px] md:h-[680px] sm:h-[600px] max-sm:h-[800px] rounded-[24px] max-sm:rounded-none text-[#fff] overflow-hidden mb-[30px]">
           <h1 className="text-4xl font-[600] pt-[88px] text-center ">
             The opportunity to change lives using <br />
             blockchain technology
@@ -50,17 +50,17 @@ const App = () => {
           </div>
           <div className="h-full w-full imgs flex items-start justify-center gap-[32px]">
             <img
-              className="xl:w-[320px] lg:w-[270px] md:w-[230px] sm:w-[180px] max-sm:hidden max-md:mt-[100px] mt-[200px]"
+              className="xl:w-[320px] lg:w-[270px] md:w-[210px] sm:w-[180px] max-sm:hidden max-md:mt-[100px] mt-[200px]"
               src={istaklar1}
               alt="appfoto"
             />
             <img
-              className="xl:w-[320px] lg:w-[270px] md:w-[230px] sm:w-[180px]  max-md:mt-[0] mt-[0]"
+              className="xl:w-[320px] lg:w-[270px] md:w-[210px] sm:w-[180px]  max-md:mt-[0] mt-[0]"
               src={istaklar2}
               alt="appfoto"
             />
             <img
-              className="xl:w-[320px] lg:w-[270px] md:w-[230px] sm:w-[180px] max-sm:hidden max-md:mt-[50px] mt-[100px]"
+              className="xl:w-[320px] lg:w-[270px] md:w-[210px] sm:w-[180px] max-sm:hidden max-md:mt-[50px] mt-[100px]"
               src={istaklar3}
               alt="appfoto"
             />

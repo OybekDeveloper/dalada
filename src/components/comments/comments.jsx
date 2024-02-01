@@ -131,7 +131,7 @@ const Comments = () => {
       </h1>
 
       <div
-        className={`relative px-2 grid grid-cols-3 gap-5 max-lg:grid-cols-2 max-md:grid-cols-1  pt-[64px] ${
+        className={`relative px-2 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1  pt-[64px] ${
           !active ? "overflow-hidden h-[828px] " : " "
         } mb-[30px]`}
       >

@@ -60,7 +60,7 @@ const Navbar = () => {
   };
   return (
     <div className="top-0 fixed w-full navbar z-[1000]">
-      <div className=" mx-auto w-10/12 max-w-[1440px] h-[83px] flex flex-row items-center justify-between ">
+      <div className=" mx-auto max-xl:w-11/12 xl:w-10/12 max-w-[1440px] h-[83px] flex flex-row items-center justify-between ">
         <a href="#home">
           <div className="logo flex flex-row justify-center items-center">
             <img src={logo3} alt="logo" />
