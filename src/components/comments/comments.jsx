@@ -136,7 +136,7 @@ const Comments = () => {
         } mb-[30px]`}
       >
         {data?.map((item) => (
-          <CommentItem item={item} key={item.id} />
+          <CommentItem item={item} key={crypto.randomUUID()} />
         ))}
         <div
           className={`${

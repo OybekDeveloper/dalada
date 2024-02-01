@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <>
-      {!isLoading ? (
+      {isLoading ? (
         <div className="flex justify-center items-center w-full h-screen">
           <Loader />
         </div>

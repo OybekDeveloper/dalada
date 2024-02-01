@@ -22,7 +22,7 @@ const Faq = () => {
       </h1>
       <div className="w-3/4  max-sm:w-11/12">
         {data.map((item) => (
-          <FaqItem key={item.id}/>   
+          <FaqItem key={crypto.randomUUID()}/>   
         ))}
       </div>
     </div>

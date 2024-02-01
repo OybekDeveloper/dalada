@@ -116,7 +116,7 @@ const Navbar = () => {
               {defaultLanguage?.map((item) => (
                 <div
                   className="leng-content flex items-center gap-1"
-                  key={item.id}
+                  key={crypto.randomUUID()}
                   onClick={() => {
                     setSelectedLanguage(item.leng);
                     setIsLengOpen(false);
