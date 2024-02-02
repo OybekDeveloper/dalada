@@ -84,7 +84,7 @@ const Blog = () => {
         //         </div>
         //     </div>
         // </div>
-        <div id="blog" className="blog relative w-full h-full pt-32">
+        <div id="blog" className="blog relative w-full h-full pt-[100px]">
             <div className="background w-full h-full absolute flex justify-center items-center z-[-1]"></div>
             <article className="pt-10">
                 <div className="flex justify-center">
