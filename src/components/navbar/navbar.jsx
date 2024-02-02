@@ -37,6 +37,7 @@ const translations = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isLengOpen, setIsLengOpen] = useState(false);
+  const [motionLeng, setMotionLeng] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState({
     title: "O'zbek",
     url: uzb,
@@ -104,14 +105,14 @@ const Navbar = () => {
               />
             </div>
             <motion.div
-              initial={{ opacity: 0, y: "100%" }}
+              initial={{ opacity: 0, y: "-100%" }}
               animate={{
                 opacity: isLengOpen ? 1 : 0,
-                y: isLengOpen ? "10%" : "-10%",
+                y: isLengOpen ? 0 : "-10%",
               }}
               exit={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="w-full leng-item  p-2 right-0 top-[50px] text-[18px]  absolute flex flex-col justify-start items-start gap-[12px] "
+              className={`${isLengOpen ? "" : "hidden "}w-full leng-item  p-2 right-0 top-[50px] text-[18px]  absolute flex flex-col justify-start items-start gap-[12px]`}
             >
               {defaultLanguage?.map((item) => (
                 <div

@@ -63,7 +63,7 @@ const Features = () => {
       {/*Features max-sm qismi */}
       <div className="sm:hidden w-full h-full pt-[50px] flex flex-col items-center">
         <section className="max-w-[1440px] w-full mx-auto ">
-          <div className="container card-container overflow-x-scroll whitespace-nowrap mx-auto flex-shrink-0">
+          <div className="container card-container overflow-x-scroll whitespace-nowrap mx-auto">
             {featuresData.map(item => (
               <div key={crypto.randomUUID()} className="card-wrapper inline-flex w-[320px] h-[230px] ml-[20px] mr-5 flex-shrink-0">
                 <div className="card p-3 flex flex-col justify-center items-center text-center rounded-[29px] border-[1px] border-solid border-[#dfdfe2] gap-5">

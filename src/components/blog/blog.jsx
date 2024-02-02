@@ -97,7 +97,7 @@ const Blog = () => {
                 </h1>
             </article>
             <section className="max-w-[1440px] w-11/12 mx-auto pt-10">
-                <div className="container card-container  overflow-x-scroll whitespace-nowrap mx-auto">
+                <div className="container card-container overflow-x-scroll whitespace-nowrap mx-auto">
                     <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[350px]">
                         <div className="card flex justify-center items-start relative mx-auto">
                             <img className="max-sm:w-[320px] w-[380px]" src={img1} alt="foto" />
