@@ -80,7 +80,7 @@ const Features = () => {
           </div>
         </section>
         <div className="pt-[50px]">
-          <img className="w-[300px]" src={istaklar2} alt="" />
+          <img className="w-[280px]" src={istaklar2} alt="" />
         </div>
       </div>
 
