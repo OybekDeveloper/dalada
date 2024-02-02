@@ -90,7 +90,7 @@ const Blog = () => {
                 <div className="flex justify-center">
                     <h1 className="text-[#25b679] bg-[#ccf5e4] px-[16px] py-[6px] font-[14px] text-center rounded-[29px]">Blog</h1>
                 </div>
-                <h1 className="text-[32px] font-bold text-[#040303] pt-[25px]  text-center ">
+                <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[25px] font-bold text-[#040303] pt-[29px]  text-center ">
                     Dehqon va fermerlarga agronomlardan
                     <br />
                     foydali maslahatlar
@@ -98,7 +98,7 @@ const Blog = () => {
             </article>
             <section className="max-w-[1440px] w-11/12 mx-auto pt-10">
                 <div className="container card-container  overflow-x-scroll whitespace-nowrap mx-auto">
-                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[400px]">
+                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[350px]">
                         <div className="card flex justify-center items-start relative mx-auto">
                             <img className="max-sm:w-[320px] w-[380px]" src={img1} alt="foto" />
                             <div className="w-[320px] max-sm:w-[280px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between whitespace-normal">
@@ -121,7 +121,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[400px]">
+                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[350px]">
                         <div className="card flex justify-center items-start relative mx-auto">
                             <img className="max-sm:w-[320px] w-[380px]" src={img1} alt="foto" />
                             <div className="w-[320px] max-sm:w-[280px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between whitespace-normal">
@@ -144,7 +144,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[400px]">
+                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[350px]">
                         <div className="card flex justify-center items-start relative mx-auto">
                             <img className="max-sm:w-[320px] w-[380px]" src={img1} alt="foto" />
                             <div className="w-[320px] max-sm:w-[280px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between whitespace-normal">
@@ -167,7 +167,7 @@ const Blog = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[400px]">
+                    <div className="card-wrapper inline-flex w-[400px] max-sm:w-[350px] h-[350px]">
                         <div className="card flex justify-center items-start relative mx-auto">
                             <img className="max-sm:w-[320px] w-[380px]" src={img1} alt="foto" />
                             <div className="w-[320px] max-sm:w-[280px] blogimg top-[144px] absolute p-[16px] flex flex-col justify-between whitespace-normal">

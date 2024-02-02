@@ -1,3 +1,5 @@
 .features {
- 
+  .card-container::-webkit-scrollbar {
+    display: none;
+  }
 }

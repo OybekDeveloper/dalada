@@ -125,29 +125,25 @@ const Comments = () => {
       <div className="flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Mijozlar fikrlari
       </div>
-      <h1 className="text-[32px] font-bold text-[#040303] pt-[25px] max-sm:text-center">
+      <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[25px] font-bold text-[#040303] pt-[29px] max-sm:text-center">
         Xursand <span className="text-[#25b679]">mijozlarimiz</span> fikrlarini
         tinglang
       </h1>
-
       <div
-        className={`relative px-2 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1  pt-[64px] ${
-          !active ? "overflow-hidden h-[828px] " : " "
-        } mb-[30px]`}
+        className={`relative px-2 grid grid-cols-3 gap-8 max-lg:grid-cols-2 max-sm:grid-cols-1  pt-[64px] ${!active ? "overflow-hidden h-[828px] " : " "
+          } mb-[30px]`}
       >
         {data?.map((item) => (
           <CommentItem item={item} key={crypto.randomUUID()} />
         ))}
         <div
-          className={`${
-            !active && "read"
-          } absolute bottom-0 h-[440px] flex items-center justify-center w-full`}
+          className={`${!active && "read"
+            } absolute bottom-0 h-[440px] flex items-center justify-center w-full`}
         >
           <button
             onClick={handleActiveBtn}
-            className={`${
-              active && " hidden"
-            }  btn px-[24px] hover:bg-[#29cc88] w-[200px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
+            className={`${active && " hidden"
+              }  btn px-[24px] hover:bg-[#29cc88] w-[200px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
           >
             Hammasini o'qish
           </button>
@@ -155,9 +151,8 @@ const Comments = () => {
       </div>
       <button
         onClick={handleActiveBtn}
-        className={`${
-          !active && "hidden"
-        }  btn px-[24px] hover:bg-[#29cc88] w-[200px] h-[50px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
+        className={`${!active && "hidden"
+          }  btn px-[24px] hover:bg-[#29cc88] w-[200px] h-[50px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
       >
         Yopish
       </button>

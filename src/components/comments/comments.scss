@@ -32,16 +32,17 @@
       background: #21a36d;
     }
   }
-.btn {
-  padding: 12px 24px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  &:focus {
-    border-radius: 6px;
-    border: 3px solid var(--White, #96efca);
-    background: #21a36d;
+  .btn {
+    padding: 12px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    &:focus {
+      border-radius: 6px;
+      border: 3px solid var(--White, #fff);
+      background: #21a36d;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
   }
-}
 }

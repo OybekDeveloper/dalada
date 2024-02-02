@@ -15,7 +15,7 @@ const About = () => {
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Ilova haqida
       </div>
-      <h1 className="text-[32px] font-bold text-center pt-[25px]">
+      <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[25px] font-bold text-center pt-[25px]">
         Bizning “<span className="text-[#25b679]">Daladan</span>” ilovamizda o’z{" "}
         <br />
         mahsulotlaringizni soting va sotib oling!
@@ -96,7 +96,7 @@ const About = () => {
       {/* ilovani yuklash havolasi */}
       <div className="relative w-full  pt-[100px] max-sm:pt-[20px] mb-[100px]">
         <div className="instal w-full flex flex-col items-center gap-4 mt-[100px]">
-          <h1 className="text-[32px] font-bold text-center text-[#040303] ">
+          <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[25px] font-bold text-center text-[#040303] ">
             Ilovani tezda yuklab oling{" "}
           </h1>
           <p className="w-1/2 max-md:w-3/4 text-[16px] opacity-[0.7] font-[400] text-center text-[#040303]">

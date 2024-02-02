@@ -10,20 +10,82 @@ import {
   route,
   sack,
 } from "./featuresimg";
-
 import "./features.scss";
+const featuresData = [
+  {
+    id: 1,
+    img: megaphone,
+    title: "Mahsulotlar reklamasi",
+    discription: " O’z mahsulotlaringizni ilovamiz orqali reklama qiling va oson soting"
+  },
+  {
+    id: 2,
+    img: route,
+    title: "Daladan uyingizga",
+    discription: " Poliz va dehqonchilik mahsulotlarini to’g’ridan-to’gri daladan sotib oling"
+  },
+  {
+    id: 3,
+    img: sack,
+    title: "Qulay narx",
+    discription: " Mahsulotlarni o’zingizga qulya bo’lgan narxlarda sotib oling"
+  },
+  {
+    id: 4,
+    img: magicWand,
+    title: "Tushunarli dizayn",
+    discription: " Ilova dizayni foydalanuvchilar uchun qulay va sodda ishlab chiqilgan"
+  },
+  {
+    id: 5,
+    img: resources,
+    title: "Qulay navigatsiya",
+    discription: " Har bitta element foydalanuvchi uchun qulay joyda joylashtirilganligi"
+  },
+  {
+    id: 6,
+    img: review,
+    title: "Oson ro’yxatdan o’tish",
+    discription: " Ilovadan tezda ortiqcha ma’lumotlarsiz ro’yxatdan o’ting"
+  },
+]
 const Features = () => {
   return (
     <div id="features" className="features max-w-[1440px] max-sm:w-full xl:w-10/12 max-xl:w-11/12 mx-auto flex items-center flex-col pt-[100px]">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         Xususiyatlar
       </div>
-      <h1 className="max-sm:w-11/12 text-3xl text-center pt-[25px] font-bold">
+      <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[25px] max-sm:w-11/12 text-3xl text-center pt-[29px] font-bold">
         Ilovamiz xususiyatlari sizga
         <br />
         albatta yoqadi{" "}
       </h1>
-      <div className="flex lg:flex-row max-lg:flex-col justify-center items-center pt-[64px] lg:gap-10 gap-20 text-[#040303] ">
+      {/*Features max-sm qismi */}
+      <div className="sm:hidden w-full h-full pt-[80px] flex flex-col items-center">
+        <section className="max-w-[1440px] w-full mx-auto ">
+          <div className="container card-container overflow-x-scroll whitespace-nowrap mx-auto flex-shrink-0">
+            {featuresData.map(item => (
+              <div key={crypto.randomUUID()} className="card-wrapper inline-flex w-[320px] h-[230px] ml-[20px] mr-5 flex-shrink-0">
+                <div className="card p-3 flex flex-col justify-center items-center text-center rounded-[29px] border-[1px] border-solid border-[#dfdfe2] gap-5">
+                  <img className="w-[48px] h-[48px]" src={item.img} alt="img" />
+                  <div className="whitespace-normal">
+                    <h1 className="text-[26px] font-bold">{item.title}</h1>
+                    <p className="text-[16px] font-[400] pt-2">
+                      {item.discription}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div className="pt-[50px]">
+          <img className="w-[300px]" src={istaklar2} alt="" />
+        </div>
+      </div>
+
+      {/*Features smdan keyingi qismi */}
+      <div className="flex max-sm:hidden lg:flex-row max-lg:flex-col justify-center items-center pt-[64px] lg:gap-10 gap-20 text-[#040303] ">
         <div className="lg:flex max-lg:grid max-lg:grid-cols-2  max-md:grid-cols-1 flex-col gap-[50px] ">
           <div className="w-full max-lg:w-4/5 max-sm:w-11/12 mx-auto h-full flex lg:flex-row md:flex-col justify-center items-center">
             <img src={megaphone} alt="img" />
@@ -56,7 +118,7 @@ const Features = () => {
           </div>
         </div>
         <div>
-          <img className="w-[400px] max-sm:w-[320px]" src={istaklar2} alt="" />
+          <img className="w-[400px] max-sm:w-[250px] max-md:w-[280px]" src={istaklar2} alt="" />
         </div>
         <div className="lg:flex max-lg:grid max-lg:grid-cols-2  max-md:grid-cols-1 flex-col gap-[50px] ">
           <div className="w-full max-lg:w-4/5 max-sm:w-11/12 mx-auto h-full flex lg:flex-row md:flex-col justify-center items-center">
@@ -91,16 +153,16 @@ const Features = () => {
         </div>
       </div>
       {/* qanday ishlaydi  */}
-      <div className="mt-[200px] lg:h-[570px] md:h-full rounded-[24px] max-sm:rounded-none bg-[#25B679] w-full flex flex-col items-center  mb-[20px] pb-2">
+      <div className="mt-[100px] lg:h-[570px] md:h-full rounded-[24px] max-sm:rounded-none bg-[#25B679] w-full flex flex-col items-center  mb-[20px] pb-2">
         <div className="btn mt-[64px] flex justify-center px-[16px] py-[6px] text-[14px] text-center text-[#25b679] bg-[#FFF] rounded-[29px]">
           Qanday ishlaydi?
         </div>
-        <h1 className="text-[32px] text-[#fff] font-bold text-center pt-[25px] w-11/12">
+        <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[23px] text-[#fff] font-bold text-center pt-[29px] w-11/12">
           Tizimning ishlashi: uzluksiz funksionallik <br />
           uchun asosiy jarayonlarni ochish
         </h1>
         <div className="max-sm:w-4/5 sm:w-4/5 lg:flex sm:grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:justify-center flex-row items-center lg:gap-[150px] sm:gap-x-[100px] gap-y-[50px] mt-[50px] mb-12">
-          <div className="max-sm:w-2/3 sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
+          <div className="max-sm:w-full sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
             <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               01
             </h1>
@@ -112,7 +174,7 @@ const Features = () => {
               <img width={"160px"} src={arrow1} alt="arrow" />
             </div>
           </div>
-          <div className="max-sm:w-2/3 sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
+          <div className="max-sm:w-full sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
             <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               02
             </h1>
@@ -127,7 +189,7 @@ const Features = () => {
               <img width={"160px"} src={arrow2} alt="arrow" />
             </div>
           </div>
-          <div className="max-sm:w-2/3 sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
+          <div className="max-sm:w-full sm:w-11/12 relative h-full flex flex-col justify-start gap-4 max-sm:justify-center max-sm:items-center  max-sm:text-center">
             <h1 className="text-[26px]  w-[55px] h-[56px] items-center rounded-full px-[13px] py-[10px] font-bold text-[#25B679] bg-white p-[10px] flex justify-center">
               03
             </h1>
