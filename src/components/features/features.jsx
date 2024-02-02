@@ -61,7 +61,7 @@ const Features = () => {
         albatta yoqadi{" "}
       </h1>
       {/*Features max-sm qismi */}
-      <div className="sm:hidden w-full h-full pt-[80px] flex flex-col items-center">
+      <div className="sm:hidden w-full h-full pt-[50px] flex flex-col items-center">
         <section className="max-w-[1440px] w-full mx-auto ">
           <div className="container card-container overflow-x-scroll whitespace-nowrap mx-auto flex-shrink-0">
             {featuresData.map(item => (
