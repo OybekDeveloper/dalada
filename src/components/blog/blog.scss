@@ -1,10 +1,12 @@
 .blog {
   .blogimg {
-    height: 213px;
     flex-shrink: 0;
     border-radius: 6px;
     background: var(--White, #fff);
     box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.02);
+  }
+  .card-container::-webkit-scrollbar {
+    display: none;
   }
   .background {
     flex-shrink: 0;
