@@ -15,7 +15,7 @@ const Footer = () => {
   return (
     <div className="w-full flex justify-center footer mt-[100px]">
       <div className="w-11/12  bottom-0 flex flex-col pt-[100px] pb-[30px]">
-        <div className="max-w-[1440px] mx-auto w-full aloqa flex max-sm:flex-col gap-10 items-start max-md:gap-[200px] max-sm:gap-10  pb-10 ">
+        <div className="max-w-[1440px] mx-auto w-full aloqa flex max-sm:flex-col lg:gap-5 items-start max-md:gap-[200px] max-sm:gap-10  pb-10 lg:justify-between">
           <div className="flex xl:flex-row max-md:flex-col gap-10 ">
             <div className="flex flex-col  items-start gap-[21px]">
               <div className="logo flex flex-row justify-center items-center">
@@ -33,7 +33,7 @@ const Footer = () => {
               </div>
               <div className=""></div>
             </div>
-            <div className="links max-sm:w-full">
+            <div className="lg:hidden links max-sm:w-full">
               <ul className="max-sm:w-full flex flex-col justify-start items-start gap-3 text-[#040303] text-[18px] font-[500]">
                 <li >
                   <a className="font-[500]" href="#features">Ilova xususiyatlari</a>
@@ -50,6 +50,23 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
+          </div>
+          <div className="max-lg:hidden links max-sm:w-full">
+            <ul className="max-sm:w-full flex flex-col justify-start items-start gap-3 text-[#040303] text-[18px] font-[500]">
+              <li >
+                <a className="font-[500]" href="#features">Ilova xususiyatlari</a>
+              </li>
+
+              <li>
+                <a className="font-[500]" href="#comments">Mijozlar fikrlari</a>
+              </li>
+              <li>
+                <a className="font-[500]" href="#blog">Blog</a>
+              </li>
+              <li>
+                <a className="font-[500]" href="#faq">Ko’p beriladigan savollar</a>
+              </li>
+            </ul>
           </div>
           <div className="flex flex-col  justify-center max-sm:w-full">
             <h1 className="font-[500] text-[20px] ">Ilovani yuklab oling</h1>

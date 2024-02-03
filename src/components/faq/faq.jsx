@@ -11,9 +11,9 @@ const data = [
   { id: 8 },
 ];
 const Faq = () => {
- 
+
   return (
-    <div id="faq" className="faq max-w-[1440px] xl:w-10/12 max-xl:w-11/12 mx-auto flex flex-col items-center pt-[100px] ">
+    <div id="faq" className="faq max-w-[1440px] xl:w-10/12 max-xl:w-11/12 mx-auto flex flex-col items-center pt-[200px] ">
       <div className="btn flex justify-center px-[16px] py-[6px] font-[14px] text-center text-[#25b679] bg-[#ccf5e4] rounded-[29px]">
         FAQ
       </div>
@@ -22,7 +22,7 @@ const Faq = () => {
       </h1>
       <div className="w-3/4  max-sm:w-11/12">
         {data.map((item) => (
-          <FaqItem key={crypto.randomUUID()}/>   
+          <FaqItem key={crypto.randomUUID()} />
         ))}
       </div>
     </div>

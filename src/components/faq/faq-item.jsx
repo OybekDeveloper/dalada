@@ -28,7 +28,6 @@ const FaqItem = () => {
             <img src={arrow} alt="" />
           </div>
         </div>
-
         <p
           ref={contentRef}
           className={`faqbtn__content ${

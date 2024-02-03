@@ -31,7 +31,7 @@ const App = () => {
       ) : (
         <div id="home" className="app relative">
           <Navbar />
-          <div className=" pt-[83px]">
+          <div className=" pt-[100px] max-sm:pt-[83px]">
             <div className="home max-w-[1440px] xl:w-10/12 max-xl:w-11/12 max-sm:w-full mx-auto flex flex-col items-center  lg:h-[768px] md:h-[680px] sm:h-[600px] max-sm:h-[800px] rounded-[24px] max-sm:rounded-none text-[#fff] overflow-hidden mb-[30px]">
               <h1 className="text-[32px] max-md:text-[29px] max-sm:text-[25px] font-[600] pt-[88px] text-center ">
                 The opportunity to change lives using <br />

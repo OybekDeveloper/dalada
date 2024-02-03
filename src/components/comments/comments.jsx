@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./comments.scss";
 import CommentItem from "./comment-item";
+import { IoChevronDownOutline, IoChevronUpOutline } from "react-icons/io5";
+
 const data = [
   {
     id: 1,
@@ -109,12 +111,19 @@ const data = [
     logo: "path/to/logo10.png",
   },
 ];
+const scrollToSection = (sectionId) => {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 const Comments = () => {
   const [active, setActice] = useState(false);
   const handleActiveBtn = () => {
     setTimeout(() => {
       setActice(!active);
+
     }, 300);
   };
   return (
@@ -138,23 +147,27 @@ const Comments = () => {
         ))}
         <div
           className={`${!active && "read"
-            } absolute bottom-0 h-[440px] flex items-center justify-center w-full`}
+            } absolute bottom-0 max-sm:pb-[20px] h-[440px] flex items-center max-sm:items-end justify-center w-full`}
         >
           <button
             onClick={handleActiveBtn}
-            className={`${active && " hidden"
-              }  btn px-[24px] hover:bg-[#29cc88] w-[200px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
+            className={`${active ? " hidden " : " max-sm:flex "
+              } btn px-[24px] max-sm:gap-[7px] max-sm:w-3/4 max-sm:justify-center max-sm:items-center hover:bg-[#29cc88] w-[200px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
           >
-            Hammasini o'qish
+            <p>Hammasini o'qish</p>
+            <div>
+              <IoChevronDownOutline className="w-full sm:hidden" />
+            </div>
           </button>
         </div>
       </div>
       <button
-        onClick={handleActiveBtn}
-        className={`${!active && "hidden"
-          }  btn px-[24px] hover:bg-[#29cc88] w-[200px] h-[50px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
+        onClick={() => { handleActiveBtn(); scrollToSection('comments') }}
+        className={`${!active ? " hidden " : " max-sm:flex "
+          }  btn px-[24px] max-sm:gap-[7px] max-sm:w-3/4  max-sm:justify-center max-sm:items-center hover:bg-[#29cc88] w-[200px] h-[50px] py-[12px]  bg-[#25B679] text-[#fff] text-[18px] font-[500] rounded-[6px]`}
       >
-        Yopish
+        <p>Yopish</p>
+        <IoChevronUpOutline className="sm:hidden" />
       </button>
     </div>
   );

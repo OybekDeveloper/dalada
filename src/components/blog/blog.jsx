@@ -84,9 +84,9 @@ const Blog = () => {
         //         </div>
         //     </div>
         // </div>
-        <div id="blog" className="blog relative w-full h-full pt-[80px]">
+        <div id="blog" className="blog relative w-full h-[700px] pt-[50px]">
             <div className="background w-full h-full absolute flex justify-center items-center z-[-1]"></div>
-            <article className="pt-[20px]">
+            <article className="pt-[50px]">
                 <div className="flex justify-center">
                     <h1 className="text-[#25b679] bg-[#ccf5e4] px-[16px] py-[6px] font-[14px] text-center rounded-[29px]">Blog</h1>
                 </div>
